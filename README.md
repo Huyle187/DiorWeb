@@ -5,7 +5,7 @@
 -   Type "npm run dev" and hit enter
 -   Type "cp .env.example .env" and hit enter
 -   Open file ".env", replace "DB_DATABASE=phplaravel" to "DB_DATABASE=dior-informal-website"
--   Open [phpmyadmin] (http://localhost/phpmyadmin/), create new database
+-   Open http://localhost/phpmyadmin/, create new database
 -   Type "php artisan key:generate" and hit enter
 -   Type "php artisan migrate" and hit enter
 -   Type "php artisan serve" and hit enter
