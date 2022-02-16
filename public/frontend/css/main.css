@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: "Gothic A1", sans-serif;
+    font-size: 62.5%;
+    -webkit-tap-highlight-color: transparent !important;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
