@@ -15,9 +15,5 @@
 
 @section('scripts')
     {{--quick defined--}}
-    <script>
-      $(function () {
-          // your custom javascript
-      });
-   </script>
+    <script></script>
 @stop
