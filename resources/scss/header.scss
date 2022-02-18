@@ -61,7 +61,6 @@
 
                             .input-search-button {
                                 z-index: 1;
-                                padding-left: 1rem;
                             }
                         }
 
@@ -92,11 +91,30 @@
                                             width: 100%;
 
                                             .react-autosuggest__input {
-                                                padding: 0;
+                                                padding: 0 25% 0 0;
                                                 width: 120%;
                                                 font-size: 1.3rem;
                                                 line-height: 2.1rem;
-                                                color: rgba(0, 0, 0, 0.7);
+
+                                                &::-webkit-input-placeholder {
+                                                    color: rgba(0, 0, 0, 0.7);
+                                                }
+
+                                                &::-moz-placeholder {
+                                                    color: rgba(0, 0, 0, 0.7);
+                                                }
+
+                                                &:-ms-input-placeholder {
+                                                    color: rgba(0, 0, 0, 0.7);
+                                                }
+
+                                                &::-ms-input-placeholder {
+                                                    color: rgba(0, 0, 0, 0.7);
+                                                }
+
+                                                &::placeholder {
+                                                    color: rgba(0, 0, 0, 0.7);
+                                                }
                                             }
                                         }
                                     }

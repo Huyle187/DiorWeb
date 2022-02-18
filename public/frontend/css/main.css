@@ -14,3 +14,7 @@ body {
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
+input::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}

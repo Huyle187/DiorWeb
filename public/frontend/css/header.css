@@ -56,7 +56,6 @@
 }
 .header__top__nav ul .header-icon .input-search__wrapper .input-search-button {
   z-index: 1;
-  padding-left: 1rem;
 }
 .header__top__nav ul .header-icon .input-search .input-search__input-wrapper {
   opacity: 0;
@@ -81,10 +80,18 @@
   width: 100%;
 }
 .header__top__nav ul .header-icon .input-search .input-search__input-wrapper .lib-header-search-field div .lib-header-components-search .react-autosuggest__container .react-autosuggest__input {
-  padding: 0;
+  padding: 0 25% 0 0;
   width: 120%;
   font-size: 1.3rem;
   line-height: 2.1rem;
+}
+.header__top__nav ul .header-icon .input-search .input-search__input-wrapper .lib-header-search-field div .lib-header-components-search .react-autosuggest__container .react-autosuggest__input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.7);
+}
+.header__top__nav ul .header-icon .input-search .input-search__input-wrapper .lib-header-search-field div .lib-header-components-search .react-autosuggest__container .react-autosuggest__input:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.7);
+}
+.header__top__nav ul .header-icon .input-search .input-search__input-wrapper .lib-header-search-field div .lib-header-components-search .react-autosuggest__container .react-autosuggest__input::placeholder {
   color: rgba(0, 0, 0, 0.7);
 }
 .header__top__nav ul .header-icon .input-search__border {
