@@ -1,0 +1,223 @@
+.side-panel__right {
+  position: fixed;
+  display: block;
+  width: 55rem;
+  height: 100%;
+  background-color: #fff;
+  z-index: 1000000002;
+  right: -55rem;
+  top: 0;
+  transition: all 0.2s ease-out;
+}
+.side-panel__right.active {
+  transform: translate3d(-55rem, 0, 0);
+}
+.side-panel__right .side-panel__close {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 8rem;
+  padding: 0 2.85rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+.side-panel__right .side-panel__close-icon {
+  cursor: pointer;
+}
+.side-panel__right .side-panel__tabs-header {
+  display: flex;
+  margin: auto;
+  height: 4.5rem;
+  border-bottom: 1px solid #e5e5e5;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.side-panel__right .side-panel__tabs-header .tabs-header-item-container {
+  flex: 0 0 auto;
+  margin: auto;
+}
+.side-panel__right .side-panel__tabs-header .tabs-header-item-container .tabs-header-item {
+  display: inline-flex;
+  align-items: center;
+  justify-self: center;
+  height: 4.5rem;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+.side-panel__right .side-panel__tabs-header .tabs-header-item-container .tabs-header-item .title-with-level {
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+.side-panel__right .account-panel-content {
+  font-size: 1.4rem;
+  height: calc(100vh - 4.5rem - 8rem);
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* width */
+  /* Handle */
+  /* Handle on hover */
+}
+.side-panel__right .account-panel-content::-webkit-scrollbar {
+  width: 7px;
+}
+.side-panel__right .account-panel-content::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+.side-panel__right .account-panel-content::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.side-panel__right .account-panel-content__wishlist {
+  padding: 2rem;
+  min-height: 100%;
+  height: 100%;
+  position: relative;
+}
+.side-panel__right .account-panel-content__wishlist .empty-wishlist {
+  padding: 5rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.side-panel__right .account-panel-content__wishlist .empty-wishlist__title {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin-bottom: 3.5rem;
+}
+.side-panel__right .account-panel-content__account {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100%;
+  padding-bottom: 0 !important;
+}
+.side-panel__right .account-panel-content__account__login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  flex-shrink: 0;
+  flex-grow: 1;
+  padding: 2rem 5rem;
+}
+.side-panel__right .account-panel-content__account__login__title {
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+.side-panel__right .account-panel-content__account__login__subtitle {
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  margin-bottom: 2rem;
+}
+.side-panel__right .account-panel-content__account__login .login-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0.8rem 5.4rem;
+}
+.side-panel__right .account-panel-content__account__login .login-form .form-group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.side-panel__right .account-panel-content__account__login .login-form .form-group .label-field {
+  z-index: 1;
+  position: absolute;
+  top: 2rem;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  transition: all 0.32s ease-out;
+}
+.side-panel__right .account-panel-content__account__login .login-form .form-group span.input {
+  display: inline-flex;
+  align-items: center;
+  height: 4.6rem;
+  border-bottom: 1px solid #757575;
+  position: relative;
+}
+.side-panel__right .account-panel-content__account__login .login-form .form-group span.input input {
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  padding: 2rem 0 0.6rem;
+}
+.side-panel__right .account-panel-content__account__login .login-form .form-group .error-text {
+  color: #d70000;
+  margin-top: 0.3rem;
+  font-size: 1.3rem;
+  line-height: 2.1rem;
+  text-align: left;
+}
+.side-panel__right .account-panel-content__account__login .login-form__email {
+  margin-bottom: 1.2rem;
+}
+.side-panel__right .account-panel-content__account__login .login-form .password-field {
+  position: relative;
+}
+.side-panel__right .account-panel-content__account__login .login-form .password-field__input .input input {
+  padding-right: 3rem;
+}
+.side-panel__right .account-panel-content__account__login .login-form .password-field__show-password .icon {
+  position: absolute;
+  top: 2rem;
+  right: 0;
+  transition: all 0.2s ease-out;
+}
+.side-panel__right .account-panel-content__account__login .login-form__forgotten-password {
+  transition: all 0.2s ease-out;
+  font-size: 1.3rem;
+  line-height: 2.1rem;
+  text-decoration: underline;
+  color: #757575;
+  margin-bottom: 1.8rem;
+  text-align: center;
+}
+.side-panel__right .account-panel-content__account__login .login-form__forgotten-password:hover {
+  font-weight: 700;
+}
+.side-panel__right .account-panel-content__account__login .login-form-actions {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.side-panel__right .account-panel-content__account__login .login-form-actions-submit {
+  transition: all 0.2s;
+}
+.side-panel__right .account-panel-content__account__signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6f6f6;
+  width: 100%;
+  flex-grow: 1;
+  padding: 2rem 0;
+}
+.side-panel__right .account-panel-content__account__signup__title {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+.side-panel__right .account-panel-content__cart {
+  padding-top: 2rem;
+}
+.side-panel__right .account-panel-content__cart .empty-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  line-height: 2.1rem;
+  text-align: center;
+}
+.side-panel__right .account-panel-content__cart .empty-cart-button {
+  margin-top: 1.5rem;
+}

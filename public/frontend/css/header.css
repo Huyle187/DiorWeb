@@ -15,7 +15,7 @@
   justify-content: space-between;
 }
 .header__top__navigation {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   line-height: 2rem;
   height: 6rem;
   display: flex;
@@ -27,7 +27,7 @@
   line-height: 6rem;
   height: 100%;
   display: inline-block;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 .header__top__navigation .navigation-tab a {
   display: inline-block;
@@ -82,7 +82,7 @@
 .header__top__nav ul .header-icon .input-search .input-search__input-wrapper .lib-header-search-field div .lib-header-components-search .react-autosuggest__container .react-autosuggest__input {
   padding: 0 25% 0 0;
   width: 120%;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   line-height: 2.1rem;
 }
 .header__top__nav ul .header-icon .input-search .input-search__input-wrapper .lib-header-search-field div .lib-header-components-search .react-autosuggest__container .react-autosuggest__input::-moz-placeholder {

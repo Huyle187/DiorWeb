@@ -2,6 +2,7 @@
     <div class="header-placeholder"></div>
     <header class="header position-absolute">
         <div class="header__top">
+            <!-- Left -->
             <nav id="nav" class="header__top__navigation">
                 <div class="navigation-tab">
                     <a class="open text-uppercase" href="/en_us/fashion" aria-label="FASHION &amp; ACCESSORIES" target="_self" rel="" tabindex="1" data-end-to-end="auto_menu_tab_fashion">FASHION &amp; ACCESSORIES</a>
@@ -10,6 +11,7 @@
                     <a class="open text-uppercase" href="/en_us/beauty" aria-label="FRAGRANCE &amp; BEAUTY" target="_self" rel="" tabindex="1" data-end-to-end="auto_menu_tab_beauty">FRAGRANCE &amp; BEAUTY</a>
                 </div>
             </nav>
+            <!-- Middle -->
             <a href="/en_us/beauty" class="header__top__logo position-absolute">
                 <span class="icon css-f86pio">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 494.5 138.3">
@@ -17,6 +19,7 @@
                     </svg>
                 </span>
             </a>
+            <!-- Right -->
             <nav class="header__top__nav">
                 <ul>
                     <li class="header-icon">
@@ -45,7 +48,7 @@
                         </div>
                     </li>
                     <li class="header-icon">
-                        <button aria-haspopup="true" aria-label="Wishlist" tabindex="1" data-end-to-end="auto_header_wl">
+                        <button aria-haspopup="true" aria-label="Wishlist" tabindex="1" data-end-to-end="auto_header_wl" id="wishlist-button">
                             <span class="icon css-f86pio">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M6.48 3.91a3.25 3.25 0 012.68 1.62L10 6.85l.83-1.33a3.12 3.12 0 012.63-1.61 2.8 2.8 0 012.08.93c1.48 1.59 1.33 3.78-.37 5.57L10 15.66l-5.22-5.3c-1.67-1.85-1.8-4-.36-5.53a2.8 2.8 0 012.06-.92zm0-1a3.8 3.8 0 00-2.79 1.24C1.94 6 2 8.73 4 11l6 6.06 5.9-6c2.16-2.27 2.15-5.06.4-6.95a3.871 3.871 0 00-2.82-1.25A4.1 4.1 0 0010 5a4.23 4.23 0 00-3.52-2.09z" fill="currentColor"></path>
@@ -54,7 +57,7 @@
                         </button>
                     </li>
                     <li class="header-icon">
-                        <button aria-haspopup="true" class="my-account" aria-label="Account" tabindex="1">
+                        <button aria-haspopup="true" class="my-account" aria-label="Account" tabindex="1" id="account-button">
                             <span class="icon css-f86pio">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M10 10a4 4 0 100-8 4 4 0 000 8zm0-7a3 3 0 110 6 3 3 0 010-6zM10 11c-5 0-7 2-7 7h14c0-5-2-7-7-7zm0 1c4.08 0 5.73 1.33 6 5H4c.27-3.67 1.92-5 6-5z" fill="currentColor"></path>
@@ -63,7 +66,7 @@
                         </button>
                     </li>
                     <li class="header-icon m-0">
-                        <button aria-haspopup="true" aria-live="polite" aria-atomic="true" tabindex="1" data-end-to-end="auto_header_cart">
+                        <button aria-haspopup="true" aria-live="polite" aria-atomic="true" tabindex="1" data-end-to-end="auto_header_cart" id="cart-button">
                             <div class="sr-only">Your shopping cart currently contains 0 items</div>
                             <span class="icon css-f86pio">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -73,6 +76,7 @@
                         </button>
                     </li>
                 </ul>
+                @include("components.side-panel-overplay")
             </nav>
         </div>
         <div class="header__menu-placeholder"></div>

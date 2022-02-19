@@ -1,4 +1,4 @@
-@import url("http://fonts.cdnfonts.com/css/century-gothic");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
     margin: 0;
@@ -7,7 +7,7 @@
 
 html,
 body {
-    font-family: "Century Gothic", sans-serif;
+    font-family: "Source Sans 3", sans-serif;
     font-size: 62.5%;
     -webkit-tap-highlight-color: transparent !important;
     overflow-x: hidden;
@@ -17,4 +17,79 @@ body {
 
 input::-webkit-search-cancel-button {
     -webkit-appearance: none;
+}
+
+.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.overplay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000000001;
+    cursor: pointer;
+    transition: all 0.32s ease-out;
+}
+
+.overlay-default {
+    background: rgb(0 0 0/40%);
+}
+
+.tabs-header-item__selected {
+    border-bottom: 3px solid #000;
+    font-weight: 700;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 4.8rem;
+    border-radius: 2.4rem;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    padding: 0 3.2rem;
+    transition: font-weight 0.32s ease-out;
+}
+
+.button:hover {
+    font-weight: 700;
+}
+
+.background-color-black {
+    background-color: #000;
+}
+
+.color-white {
+    color: #fff;
+}
+
+.disabled {
+    opacity: 20%;
+    pointer-events: none;
+    cursor: auto;
+}
+
+.border-black {
+    border: 1px solid #000;
+}
+
+.background-color-white {
+    background-color: #fff;
+}
+
+.hidden {
+    display: none !important;
 }
