@@ -42,7 +42,7 @@
             </div>
         </div>
         <div class="account-panel-content__account hidden">
-            <div class="account-panel-content__account__login">
+            <div class="account-panel-content__account__login" id="forgot-password">
                 <span class="title-with-level account-panel-content__account__login__title text-uppercase">
                     <span class="multiline-text">
                         Log in
@@ -95,6 +95,37 @@
                         </button>
                         <span class="login-form-error"></span>
                     </div>
+                </form>
+            </div>
+            <div class="account-panel-content__account__forgot-password hidden" id="back-to-login">
+                <span class="title-with-level account-panel-content__account__forgot-password__title text-uppercase">
+                    <span class="multiline-text">
+                        Forgot your password ?
+                    </span>
+                </span>
+                <p class="multiline-text account-panel-content__account__forgot-password__subtitle">
+                    Please enter the email address you registered with. We will send you a link for changing your password.
+                </p>
+                <form action="POST" class="forgot-password">
+                    <div class="form-group forgot-password__forgot-password">
+                        <label for="forgot-password-input" class="label-field">*Email address</label>
+                        <span class="input">
+                            <input id="forgot-password-input" name="forgot-password" type="email" aria-describedby="forgot-password-error" required="" pattern="^[a-zA-Z0-9!#$%&amp;'*+/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&amp;'*+/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$" maxlength="50" autocapitalize="none" aria-invalid="true" autocomplete="email" aria-autocomplete="none" value="">
+                            <span role="status"></span>
+                        </span>
+                        <span class="error-text" id="forgot-password-error"></span>
+                    </div>
+                    <div class="forgot-password-actions">
+                        <button class="button forgot-password-actions-submit text-uppercase background-color-black color-white disabled">
+                            <span class="button-link-content">
+                                <span class="button-link__title">send</span>
+                            </span>
+                        </button>
+                        <span class="forgot-password-error"></span>
+                    </div>
+                    <button class="forgot-password__forgotten-password forgotten-password__back-to-login" type="button">
+                        Back to login
+                    </button>
                 </form>
             </div>
             <div class="account-panel-content__account__signup">
