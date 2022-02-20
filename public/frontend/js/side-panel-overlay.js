@@ -47,6 +47,8 @@ const loginFormForgottenPassword = $(".login-form__forgotten-password");
 // Link forgot password form
 const forgotPassword = $("#forgot-password");
 const backToLogin = $("#back-to-login");
+// Close button
+const sidePanelClose = $(".side-panel__close");
 
 // Click on the wishlist icon
 wishlistButton.onclick = () => {
@@ -195,4 +197,11 @@ forgottenPasswordBackToLogin.onclick = () => {
 loginFormForgottenPassword.onclick = () => {
     forgotPassword.classList.add("hidden");
     backToLogin.classList.remove("hidden");
+};
+
+// Close side panel
+sidePanelClose.onclick = () => {
+    overplay.classList.remove(show);
+    overplay.classList.add(hide);
+    sidePanelRight.classList.remove("active");
 };
