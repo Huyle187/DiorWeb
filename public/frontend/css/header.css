@@ -7,6 +7,7 @@
   z-index: 300;
   top: 0;
   width: 100%;
+  overflow-y: hidden;
 }
 .header__top {
   padding: 0 4rem;
@@ -28,6 +29,7 @@
   height: 100%;
   display: inline-block;
   font-size: 1.4rem;
+  transition: all 0.32s ease-out;
 }
 .header__top__navigation .navigation-tab a {
   display: inline-block;
@@ -109,4 +111,32 @@
 .header__top__nav ul .header-icon .input-search__border.border-is-open {
   transition: width 0.24s ease-in;
   width: 19.6rem;
+}
+.header__menu-placeholder {
+  transition: all 0.1s;
+  background-color: #fff;
+  padding: 0 4rem;
+  display: flex;
+  align-items: center;
+}
+.header__menu-placeholder .navigation-tab-second {
+  padding-left: 0.7rem;
+  padding-right: 0.9rem;
+  line-height: 6rem;
+  height: 100%;
+  display: inline-block;
+  font-size: 1.4rem;
+  transition: all 0.1s;
+}
+.header__menu-placeholder .navigation-tab-second a {
+  display: inline-block;
+  height: 100%;
+}
+
+.header__menu-placeholder-second {
+  transition: all 0.1s;
+  padding: 0 4rem;
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 12.2rem);
 }

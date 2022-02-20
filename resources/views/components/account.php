@@ -89,7 +89,7 @@
         <span class="title-with-level account-panel-content__account__signup__title text-uppercase">
             <span class="multiline-text">Already have an account?</span>
         </span>
-        <a href="/en_us/couture/account/create" target="_self" rel="">
+        <a href="/couture/account/create" target="_self" rel="">
             <span class="button color-white background-color-black text-uppercase">
                 <span class="button-link-content">
                     <span class="button-link__title" data-title="Create an account">
