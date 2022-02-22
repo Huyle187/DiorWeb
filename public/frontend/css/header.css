@@ -132,11 +132,3 @@
   display: inline-block;
   height: 100%;
 }
-
-.header__menu-placeholder-second {
-  transition: all 0.1s;
-  padding: 0 4rem;
-  display: flex;
-  align-items: center;
-  height: calc(100vh - 12.2rem);
-}

@@ -16,6 +16,7 @@
     <link rel="stylesheet" type="text/css" href="{{ ('public/frontend/css/reset.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ ('public/frontend/css/main.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ ('public/frontend/css/header.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ ('public/frontend/css/footer.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ ('public/frontend/css/side-panel-overplay.css') }}">
 
     @yield('responsive')
@@ -37,6 +38,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="{{ ('public/frontend/js/main.js') }}" crossorigin="anonymous"></script>
     <script src="{{ ('public/frontend/js/header.js') }}" crossorigin="anonymous"></script>
+    <script src="{{ ('public/frontend/js/footer.js') }}" crossorigin="anonymous"></script>
     <script src="{{ ('public/frontend/js/side-panel-overlay.js') }}" crossorigin="anonymous"></script>
 
     @yield('scripts')

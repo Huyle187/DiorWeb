@@ -1,0 +1,64 @@
+.footer {
+  font-size: 1.4rem;
+  height: 2rem;
+}
+.footer__footer-sections {
+  margin-top: 4rem;
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  -moz-column-gap: 2rem;
+  column-gap: 2rem;
+}
+.footer__footer-sections li {
+  display: flex;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  vertical-align: top;
+}
+.footer__footer-sections li .expandable-section {
+  width: 100%;
+}
+.footer__footer-sections li .expandable-section__title {
+  display: block;
+  margin: 0 0 1.6rem;
+  font-weight: 700;
+}
+.footer__footer-sections li .expandable-section .store-locator-entry-form .store-locator-links li {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+}
+.footer__footer-sections li .expandable-section .store-locator-entry-form .store-locator-links li .footer-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  line-height: 3.2rem;
+  transition: all 0.2s;
+  overflow-x: hidden;
+}
+.footer__footer-sections li .expandable-section .store-locator-entry-form .store-locator-links li .footer-link__title {
+  height: 3.2rem;
+  line-height: 3.2rem;
+}
+.footer__footer-sections li .expandable-section .store-locator-entry-form .store-locator-links li .footer-link__border-bottom {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #757575;
+  transition: left 0.2s;
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+}
+.footer__footer-sections li .expandable-section .store-locator-entry-form .store-locator-links li .footer-link:hover {
+  color: #757575;
+}
+.footer__footer-sections li .expandable-section .store-locator-entry-form .store-locator-links li .footer-link:hover .footer-link__border-bottom {
+  left: 0;
+}
+.footer__footer-sections li .expandable-section .store-locator-entry-form .store-locator-links li .footer-link__icon {
+  position: absolute;
+  right: 0;
+}

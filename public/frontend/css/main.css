@@ -13,6 +13,7 @@ body {
     overflow-x: hidden;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 input::-webkit-search-cancel-button {
@@ -58,7 +59,7 @@ input::-webkit-search-cancel-button {
     cursor: pointer;
     height: 4.8rem;
     border-radius: 2.4rem;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     line-height: 2rem;
     padding: 0 3.2rem;
     transition: font-weight 0.32s ease-out;
