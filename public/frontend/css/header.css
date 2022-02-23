@@ -16,19 +16,18 @@
   justify-content: space-between;
 }
 .header__top__navigation {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   line-height: 2rem;
   height: 6rem;
   display: flex;
   align-items: center;
 }
 .header__top__navigation .navigation-tab {
-  padding-left: 0.7rem;
   padding-right: 0.9rem;
   line-height: 6rem;
   height: 100%;
   display: inline-block;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   transition: all 0.32s ease-out;
 }
 .header__top__navigation .navigation-tab a {
@@ -84,7 +83,7 @@
 .header__top__nav ul .header-icon .input-search .input-search__input-wrapper .lib-header-search-field div .lib-header-components-search .react-autosuggest__container .react-autosuggest__input {
   padding: 0 25% 0 0;
   width: 120%;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   line-height: 2.1rem;
 }
 .header__top__nav ul .header-icon .input-search .input-search__input-wrapper .lib-header-search-field div .lib-header-components-search .react-autosuggest__container .react-autosuggest__input::-moz-placeholder {
@@ -120,12 +119,11 @@
   align-items: center;
 }
 .header__menu-placeholder .navigation-tab-second {
-  padding-left: 0.7rem;
   padding-right: 0.9rem;
   line-height: 6rem;
   height: 100%;
   display: inline-block;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   transition: all 0.1s;
 }
 .header__menu-placeholder .navigation-tab-second a {

@@ -12,7 +12,7 @@
             <div class="form-group login-form__email">
                 <label for="login" class="label-field">*Email address</label>
                 <span class="input">
-                    <input id="login" name="login" type="email" aria-describedby="login-error" required="" pattern="^[a-zA-Z0-9!#$%&amp;'*+/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&amp;'*+/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$" maxlength="50" autocapitalize="none" aria-invalid="true" autocomplete="email" aria-autocomplete="none" value="">
+                    <input id="login" name="login" type="email" aria-describedby="login-error" required="" autocapitalize="none" aria-invalid="true" autocomplete="email" aria-autocomplete="none" value="">
                     <span role="status"></span>
                 </span>
                 <span class="error-text" id="login-error"></span>

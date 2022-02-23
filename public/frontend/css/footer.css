@@ -1,6 +1,189 @@
 .footer {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   height: 2rem;
+}
+.footer-newsletter-wrapper {
+  padding: 4rem 4rem 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  -moz-column-gap: 2rem;
+  column-gap: 2rem;
+  position: relative;
+  grid-column: 1/13;
+}
+.footer-newsletter-wrapper .footer-newsletter {
+  width: 100%;
+  grid-column: 1/13;
+}
+.footer-newsletter-wrapper .footer-newsletter__title {
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  display: block;
+  width: 100%;
+}
+.footer-newsletter-wrapper .footer-newsletter__form {
+  max-height: 150rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  -moz-column-gap: 2rem;
+  column-gap: 2rem;
+  grid-column: 1/13;
+}
+.footer-newsletter-wrapper .footer-newsletter__form__left-container {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  -moz-column-gap: 2rem;
+  column-gap: 2rem;
+  grid-column: 1/10;
+}
+.footer-newsletter-wrapper .footer-newsletter__form__left-container .footer-newsletter__input .form-group {
+  position: relative;
+  margin: 0 0 1.2rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.footer-newsletter-wrapper .footer-newsletter__form__left-container .footer-newsletter__input .form-group .label-field {
+  display: block;
+  position: absolute;
+  top: 2rem;
+  color: #000;
+  font-size: 1.3rem;
+  line-height: 2.1rem;
+  transition: all 0.2s;
+}
+.footer-newsletter-wrapper .footer-newsletter__form__left-container .footer-newsletter__input .form-group .input {
+  display: inline-flex;
+  align-items: center;
+  height: 4.6rem;
+  border-bottom: 1px solid #757575;
+}
+.footer-newsletter-wrapper .footer-newsletter__form__left-container .footer-newsletter__input .form-group .input input {
+  font-size: 1.3rem;
+  line-height: 2.1rem;
+  width: 100%;
+  height: 100%;
+  padding: 2rem 0 0.6rem;
+}
+.footer-newsletter-wrapper .footer-newsletter__form__left-container .footer-newsletter__input .form-group .error-text {
+  color: #d70000;
+  margin-top: 3px;
+  font-size: 1.3rem;
+  line-height: 2.1rem;
+  text-align: left;
+}
+.footer-newsletter-wrapper .footer-newsletter__form__left-container .footer-newsletter__left-container__email-field {
+  grid-column: 1/4;
+}
+.footer-newsletter-wrapper .footer-newsletter__form__left-container .footer-newsletter__left-container__text-fields {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  -moz-column-gap: 2rem;
+  column-gap: 2rem;
+  grid-column: 4/10;
+  row-gap: 2rem;
+}
+.footer-newsletter-wrapper .footer-newsletter__form__left-container .footer-newsletter__left-container__text-fields__civility-field {
+  grid-column: 1/4;
+}
+.footer-newsletter-wrapper .footer-newsletter__form__left-container .footer-newsletter__left-container__text-fields__civility-field .form-group {
+  height: 4.6rem;
+  border-bottom: 1px solid #757575;
+}
+.footer-newsletter-wrapper .footer-newsletter__form__left-container .footer-newsletter__left-container__text-fields__civility-field .form-group .title-field {
+  color: #757575;
+}
+.footer-newsletter-wrapper .footer-newsletter__form__left-container .footer-newsletter__left-container__text-fields__civility-field .form-group .custom-select-hzn {
+  font-size: 1.3rem;
+  line-height: 2.1rem;
+  cursor: pointer;
+}
+.footer-newsletter-wrapper .footer-newsletter__form__left-container .footer-newsletter__left-container__text-fields__civility-field .form-group .custom-select-hzn-button {
+  width: 100%;
+  position: relative;
+}
+.footer-newsletter-wrapper .footer-newsletter__form__left-container .footer-newsletter__left-container__text-fields__civility-field .form-group .custom-select-hzn-button .selected-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 7px;
+  width: 100%;
+}
+.footer-newsletter-wrapper .footer-newsletter__form__left-container .footer-newsletter__left-container__text-fields__civility-field .form-group .custom-select-hzn-options {
+  background-color: #fff;
+  border: 1px solid rgba(117, 117, 117, 0.3);
+  max-height: 25.6rem;
+  position: absolute;
+  left: 0;
+  top: 46.5px;
+  width: 100%;
+}
+.footer-newsletter-wrapper .footer-newsletter__form__left-container .footer-newsletter__left-container__text-fields__civility-field .form-group .custom-select-hzn-options li {
+  padding: 0.8rem 2rem;
+  width: 100%;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+}
+.footer-newsletter-wrapper .footer-newsletter__form__left-container .footer-newsletter__left-container__text-fields__civility-field .form-group .custom-select-hzn-options__selected {
+  border-left: 1px solid #000 !important;
+  font-weight: 700;
+}
+.footer-newsletter-wrapper .footer-newsletter__form__left-container .footer-newsletter__left-container__text-fields__name-fields {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  -moz-column-gap: 2rem;
+  column-gap: 2rem;
+  grid-column: 4/7;
+  row-gap: 2rem;
+}
+.footer-newsletter-wrapper .footer-newsletter__form__left-container .footer-newsletter__left-container__legal-mention {
+  font-size: 1.1rem;
+  line-height: 1.9rem;
+  grid-column: 1/7;
+  color: #757575;
+  text-align: justify;
+}
+.footer-newsletter-wrapper .footer-newsletter__form__right-container {
+  grid-column: 10/13;
+  padding-top: 2rem;
+  font-size: 1.3rem;
+  line-height: 2.1rem;
+}
+.footer-newsletter-wrapper .footer-newsletter__form__right-container .checkbox-list .label-field {
+  margin: 0 0 1.2rem;
+  text-align: justify;
+}
+.footer-newsletter-wrapper .footer-newsletter__form__right-container .checkbox-list .choices {
+  font-size: 1.3rem;
+  line-height: 2.1rem;
+}
+.footer-newsletter-wrapper .footer-newsletter__form__right-container .checkbox-list .choices .checkbox {
+  display: flex;
+  padding: 1.4rem 0.4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 100%;
+  font-size: 1.3rem;
+  line-height: 2.1rem;
+  transition: all 0.2s;
+}
+.footer-newsletter-wrapper .footer-newsletter__form__right-container .checkbox-list .choices .checkbox .icon {
+  margin: 0 0.4rem 0 0;
+  cursor: default !important;
+}
+.footer-newsletter-wrapper .footer-newsletter__form__right-container .actions {
+  margin-top: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  -moz-column-gap: 2rem;
+  column-gap: 2rem;
 }
 .footer__footer-sections {
   margin-top: 4rem;
@@ -9,6 +192,7 @@
   grid-template-columns: repeat(4, 1fr);
   -moz-column-gap: 2rem;
   column-gap: 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 .footer__footer-sections li {
   display: flex;

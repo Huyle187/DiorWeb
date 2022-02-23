@@ -110,3 +110,7 @@ input::-webkit-search-cancel-button {
     opacity: 1;
     visibility: visible;
 }
+
+.fw700 {
+    font-weight: 700 !important;
+}

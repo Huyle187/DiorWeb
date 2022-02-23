@@ -16,19 +16,18 @@
         justify-content: space-between;
 
         &__navigation {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             line-height: 2rem;
             height: 6rem;
             display: flex;
             align-items: center;
 
             .navigation-tab {
-                padding-left: 0.7rem;
                 padding-right: 0.9rem;
                 line-height: 6rem;
                 height: 100%;
                 display: inline-block;
-                font-size: 1.4rem;
+                font-size: 1.3rem;
                 transition: all 0.32s ease-out;
 
                 a {
@@ -95,7 +94,7 @@
                                             .react-autosuggest__input {
                                                 padding: 0 25% 0 0;
                                                 width: 120%;
-                                                font-size: 1.4rem;
+                                                font-size: 1.3rem;
                                                 line-height: 2.1rem;
 
                                                 &::-webkit-input-placeholder {
@@ -156,12 +155,11 @@
         align-items: center;
 
         .navigation-tab-second {
-            padding-left: 0.7rem;
             padding-right: 0.9rem;
             line-height: 6rem;
             height: 100%;
             display: inline-block;
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             transition: all 0.1s;
 
             a {
