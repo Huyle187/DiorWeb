@@ -49,14 +49,14 @@ function hoverNavigationTabs(navigationTab, headerMenuPlaceholder) {
         navigationTab.classList.add("text-shadow");
 
         headerMenuPlaceholder.classList.remove("h-0");
-        headerMenuPlaceholder.classList.add("h-100");
+        headerMenuPlaceholder.classList.add("h-6r");
         headerMenuPlaceholder.style.borderTop = "1px solid rgba(0, 0, 0, 0.2)";
     };
 
     navigationTab.onmouseout = function () {
         navigationTab.classList.remove("text-shadow");
 
-        headerMenuPlaceholder.classList.remove("h-100");
+        headerMenuPlaceholder.classList.remove("h-6r");
         headerMenuPlaceholder.classList.add("h-0");
         headerMenuPlaceholder.style.borderTop = "";
     };
@@ -66,14 +66,14 @@ function navigationTab2MouseOver(navigationTab, headerMenuPlaceholder) {
     navigationTab.classList.add("text-shadow");
 
     headerMenuPlaceholder.classList.remove("h-0");
-    headerMenuPlaceholder.classList.add("h-100");
+    headerMenuPlaceholder.classList.add("h-6r");
     headerMenuPlaceholder.style.borderTop = "1px solid rgba(0, 0, 0, 0.2)";
 }
 
 function navigationTab2MouseOut(navigationTab, headerMenuPlaceholder) {
     navigationTab.classList.remove("text-shadow");
 
-    headerMenuPlaceholder.classList.remove("h-100");
+    headerMenuPlaceholder.classList.remove("h-6r");
     headerMenuPlaceholder.classList.add("h-0");
     headerMenuPlaceholder.style.borderTop = "";
 }

@@ -24,6 +24,9 @@ const checkedCancel = $("#checked-cancel");
 const uncheckConfirm = $("#uncheck-confirm");
 const uncheckCancel = $("#uncheck-cancel");
 
+const dropdownSubsections = $$(".dropdown-subsection");
+const dropdownSubsectionContents = $$(".dropdown-subsection__content");
+
 function customSelectHznOptionFunc(
     customSelectHznOptionFirst,
     customSelectHznOptionSecond,
@@ -141,4 +144,21 @@ for (let i = 0; i < customSelectHznOption.length; i++) {
             );
         }
     };
+}
+
+for (let i = 0; i < dropdownSubsections.length; i++) {
+    for (let j = 0; j < dropdownSubsectionContents.length; j++) {
+        const dropdownSubsection = dropdownSubsections[i];
+        const dropdownSubsectionContent = dropdownSubsectionContents[i];
+
+        dropdownSubsection.onclick = () => {
+            if (dropdownSubsectionContent.classList.contains("h-0")) {
+                dropdownSubsectionContent.classList.remove("h-0");
+                dropdownSubsectionContent.classList.add("h-100");
+            } else {
+                dropdownSubsectionContent.classList.add("h-0");
+                dropdownSubsectionContent.classList.remove("h-100");
+            }
+        };
+    }
 }

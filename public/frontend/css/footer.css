@@ -218,6 +218,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   line-height: 3.2rem;
   transition: all 0.2s;
   overflow-x: hidden;
@@ -245,4 +246,13 @@
 .footer__footer-sections li .expandable-section .store-locator-entry-form .store-locator-links li .footer-link__icon {
   position: absolute;
   right: 0;
+}
+.footer__footer-sections li .expandable-section .store-locator-entry-form .store-locator-links .dropdown-subsection {
+  display: unset;
+}
+.footer__footer-sections li .expandable-section .store-locator-entry-form .store-locator-links .dropdown-subsection__content {
+  transition: all 0.2s ease-out;
+}
+.footer__footer-sections li .expandable-section .store-locator-entry-form .store-locator-links .dropdown-subsection__content li a span {
+  color: #757575;
 }

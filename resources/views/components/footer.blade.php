@@ -150,35 +150,83 @@
                 </span>
                 <div class="store-locator-entry-form">
                     <ul class="store-locator-links">
-                        <li>
-                            <a class="footer-link w-100" href="#" aria-label="Contact">
+                        <li class="dropdown-subsection">
+                            <button class="footer-link w-100" href="#" aria-label="Contact">
                                 <span class="footer-link__title">Contact</span>
                                 <span class="footer-link__icon dropdown-button__arrow">
                                     <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M11.39.6a.54.54 0 00-.78 0L6 5.21 1.39.6a.54.54 0 00-.78 0 .55.55 0 000 .77L6 6.76l5.39-5.39a.55.55 0 000-.77z" fill="currentColor"></path>
                                     </svg>
                                 </span>
-                            </a>
+                            </button>
+                            <ul class="dropdown-subsection__content w-100 h-0">
+                                <li>
+                                    <a class="footer-link footer-link__animated w-100" href="/contact-couture" aria-label="Contact Couture" target="_self">
+                                        <span class="footer-link__title">
+                                            Christian Dior Couture
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="footer-link footer-link__animated w-100" href="/contact-parfum" aria-label="Contact Perfume" target="_self">
+                                        <span class="footer-link__title">
+                                            Parfums Christian Dior
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
-                        <li>
-                            <a class="footer-link w-100" href="#" aria-label="Follow Us">
-                                <span class="footer-link__title">Follow Us</span>
+                        <li class="dropdown-subsection">
+                            <button class="footer-link w-100" href="#" aria-label="Delivery and Returns">
+                                <span class="footer-link__title">Delivery and Returns</span>
                                 <span class="footer-link__icon dropdown-button__arrow">
                                     <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M11.39.6a.54.54 0 00-.78 0L6 5.21 1.39.6a.54.54 0 00-.78 0 .55.55 0 000 .77L6 6.76l5.39-5.39a.55.55 0 000-.77z" fill="currentColor"></path>
                                     </svg>
                                 </span>
-                            </a>
+                            </button>
+                            <ul class="dropdown-subsection__content w-100 h-0">
+                                <li>
+                                    <a class="footer-link footer-link__animated w-100" href="/couture-boutique-advantages" aria-label="Advantage couture" target="_self">
+                                        <span class="footer-link__title">
+                                            Christian Dior Couture
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="footer-link footer-link__animated w-100" href="/avantages-eboutique" aria-label="Advantage perfume" target="_self">
+                                        <span class="footer-link__title">
+                                            Parfums Christian Dior
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
-                        <li>
-                            <a class="footer-link w-100" href="#" aria-label="FAQ">
+                        <li class="dropdown-subsection">
+                            <button class="footer-link w-100" href="#" aria-label="FAQ">
                                 <span class="footer-link__title">FAQ</span>
                                 <span class="footer-link__icon dropdown-button__arrow">
                                     <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M11.39.6a.54.54 0 00-.78 0L6 5.21 1.39.6a.54.54 0 00-.78 0 .55.55 0 000 .77L6 6.76l5.39-5.39a.55.55 0 000-.77z" fill="currentColor"></path>
                                     </svg>
                                 </span>
-                            </a>
+                            </button>
+                            <ul class="dropdown-subsection__content w-100 h-0">
+                                <li>
+                                    <a class="footer-link footer-link__animated w-100" href="/faq-couture" aria-label="" target="_self">
+                                        <span class="footer-link__title">
+                                            Christian Dior Couture
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="footer-link footer-link__animated w-100" href="/faq-parfum" aria-label="" target="_self">
+                                        <span class="footer-link__title">
+                                            Parfums Christian Dior
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -191,15 +239,31 @@
                 </span>
                 <div class="store-locator-entry-form">
                     <ul class="store-locator-links">
-                        <li>
-                            <a class="footer-link w-100" href="#" aria-label="Legal Terms and Conditions">
+                        <li class="dropdown-subsection">
+                            <button class="footer-link w-100" href="#" aria-label="Legal Terms and Conditions">
                                 <span class="footer-link__title">Legal Terms and Conditions</span>
                                 <span class="footer-link__icon dropdown-button__arrow">
                                     <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M11.39.6a.54.54 0 00-.78 0L6 5.21 1.39.6a.54.54 0 00-.78 0 .55.55 0 000 .77L6 6.76l5.39-5.39a.55.55 0 000-.77z" fill="currentColor"></path>
                                     </svg>
                                 </span>
-                            </a>
+                            </button>
+                            <ul class="dropdown-subsection__content w-100 h-0">
+                                <li>
+                                    <a class="footer-link footer-link__animated w-100" href="/legal-terms" aria-label="Legal terms" target="_self">
+                                        <span class="footer-link__title">
+                                            Christian Dior Couture
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="footer-link footer-link__animated w-100" href="/parfum-legal-terms" aria-label="" target="_self">
+                                        <span class="footer-link__title">
+                                            Parfums Christian Dior
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <a class="footer-link" href="#" aria-label="Data Protection">
@@ -219,15 +283,58 @@
                                 <span class="footer-link__border-bottom"></span>
                             </a>
                         </li>
-                        <li>
-                            <a class="footer-link w-100" href="#" aria-label="Delivery and Returns">
+                        <li class="dropdown-subsection">
+                            <button class="footer-link w-100" href="#" aria-label="Delivery and Returns">
                                 <span class="footer-link__title">Follow Us</span>
                                 <span class="footer-link__icon dropdown-button__arrow">
                                     <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M11.39.6a.54.54 0 00-.78 0L6 5.21 1.39.6a.54.54 0 00-.78 0 .55.55 0 000 .77L6 6.76l5.39-5.39a.55.55 0 000-.77z" fill="currentColor"></path>
                                     </svg>
                                 </span>
-                            </a>
+                            </button>
+                            <ul class="dropdown-subsection__content w-100 h-0">
+                                <li>
+                                    <a class="footer-link footer-link__animated w-100" href="https://www.instagram.com/dior#" aria-label="" target="_blank">
+                                        <span class="footer-link__title">Instagram</span>
+                                        <span class="icon css-ya210c" height="20" width="20">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10 3.85h3a4.15 4.15 0 011.39.25 2.44 2.44 0 011.43 1.43c.182.469.277.967.28 1.47v6a4.148 4.148 0 01-.25 1.39 2.439 2.439 0 01-1.43 1.43c-.453.176-.934.27-1.42.28H7a4.15 4.15 0 01-1.39-.25 2.44 2.44 0 01-1.43-1.43A4.15 4.15 0 013.9 13v-3-3a4.15 4.15 0 01.25-1.39 2.44 2.44 0 011.43-1.46A4.15 4.15 0 017 3.9c.79 0 1-.05 3-.05zm0-1.35H6.91a5.45 5.45 0 00-1.82.34 3.88 3.88 0 00-2.2 2.2 5.45 5.45 0 00-.34 1.82v6.18a5.45 5.45 0 00.34 1.82 3.88 3.88 0 002.2 2.2 5.45 5.45 0 001.82.34c.8 0 1 .05 3.09.05s2.29 0 3.09-.05a5.45 5.45 0 001.82-.34 3.88 3.88 0 002.2-2.2 5.448 5.448 0 00.34-1.82c0-.8.05-1.05.05-3.09s0-2.29-.05-3.09a5.448 5.448 0 00-.34-1.82 3.88 3.88 0 00-2.2-2.2 5.45 5.45 0 00-1.82-.34H10z" fill="currentColor"></path>
+                                                <path d="M10 6.15a3.85 3.85 0 100 7.7 3.85 3.85 0 000-7.7zm0 6.35a2.5 2.5 0 110-5 2.5 2.5 0 010 5zM14 6.9a.9.9 0 100-1.8.9.9 0 000 1.8z" fill="currentColor"></path>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="footer-link footer-link__animated w-100" href="#" aria-label="" target="_blank">
+                                        <span class="footer-link__title">Twitter</span>
+                                        <span class="icon css-ya210c" height="20" width="20">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16.36 6.74v.42A9.27 9.27 0 017 16.5 9.34 9.34 0 012 15c.26.015.52.015.78 0a6.55 6.55 0 004.08-1.4 3.3 3.3 0 01-3.07-2.28c.492.09.997.07 1.48-.06a3.29 3.29 0 01-2.63-3.15 3.27 3.27 0 001.49.41 3.29 3.29 0 01-1-4.38 9.33 9.33 0 006.75 3.39 3.29 3.29 0 015.59-3 6.54 6.54 0 002.09-.79 3.29 3.29 0 01-1.45 1.81A6.45 6.45 0 0018 5a6.789 6.789 0 01-1.64 1.74z" fill="currentColor"></path>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="footer-link footer-link__animated w-100" href="#" aria-label="" target="_blank">
+                                        <span class="footer-link__title">Facebook</span>
+                                        <span class="icon css-ya210c" height="20" width="20">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M18 10a8 8 0 10-9.25 7.9v-5.59h-2V10h2V8.24a2.82 2.82 0 013-3.12c.6.008 1.198.062 1.79.16v2h-1a1.16 1.16 0 00-1.3 1.25V10h2.22l-.36 2.31h-1.85v5.59A8 8 0 0018 10z" fill="currentColor"></path>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="footer-link footer-link__animated w-100" href="#" aria-label="" target="_blank">
+                                        <span class="footer-link__title">Tiktok</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="footer-link footer-link__animated w-100" href="#" aria-label="" target="_blank">
+                                        <span class="footer-link__title">Snapchat</span>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <a class="footer-link" href="#" aria-label="Careers">

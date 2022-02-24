@@ -255,6 +255,7 @@
                                 position: relative;
                                 display: flex;
                                 align-items: center;
+                                justify-content: space-between;
                                 line-height: 3.2rem;
                                 transition: all 0.2s;
                                 overflow-x: hidden;
@@ -286,6 +287,22 @@
                                 &__icon {
                                     position: absolute;
                                     right: 0;
+                                }
+                            }
+                        }
+
+                        .dropdown-subsection {
+                            display: unset;
+
+                            &__content {
+                                transition: all 0.2s ease-out;
+
+                                li {
+                                    a {
+                                        span {
+                                            color: #757575;
+                                        }
+                                    }
                                 }
                             }
                         }
