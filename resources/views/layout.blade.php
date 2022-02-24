@@ -19,6 +19,8 @@
     <link rel="stylesheet" type="text/css" href="{{ ('public/frontend/css/footer.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ ('public/frontend/css/side-panel-overplay.css') }}">
 
+    @yield('styles')
+
     @yield('responsive')
 
     {{--Favicon common--}}
@@ -28,7 +30,7 @@
 <body>
     @include("components.header")
 
-    @yield("content")
+    @yield("home")
 
     @include("components.footer")
 
