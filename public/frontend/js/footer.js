@@ -162,3 +162,67 @@ for (let i = 0; i < dropdownSubsections.length; i++) {
         };
     }
 }
+
+// loginInput.focusout = () => {
+//     if (loginInput.value == "") {
+//         loginError.innerText = "Please check your email";
+//         loginFormEmailSpanInput.style.borderColor = "#d70000";
+//     } else {
+//         loginError.innerText = "";
+//         loginFormEmailSpanInput.style.borderColor = "#000";
+//     }
+// };
+
+const footerNewsletterEmailInput = $(
+    ".footer-newsletter__input .form-group .input #email"
+);
+const footerNewsletterLastName = $(
+    ".footer-newsletter__input .form-group .input #last-name"
+);
+const footerNewsletterFirstName = $(
+    ".footer-newsletter__input .form-group .input #first-name"
+);
+const footerNewsletterEmailError = $(
+    ".footer-newsletter__input .form-group #email-error"
+);
+const footerNewsletterLastNameError = $(
+    ".footer-newsletter__input .form-group #last-name-error"
+);
+const footerNewsletterFirstNameError = $(
+    ".footer-newsletter__input .form-group #first-name-error"
+);
+const footerNewsletterInputBorder = $$(
+    ".footer-newsletter__input .form-group .input"
+);
+
+footerNewsletterEmailInput.focusout = () => {
+    if (footerNewsletterEmailInput.value == "") {
+        footerNewsletterEmailError.innerText = "E-mail format is wrong";
+        footerNewsletterInputBorder[0].style.borderColor = "#d70000";
+    } else {
+        footerNewsletterEmailError.innerText = "";
+        footerNewsletterInputBorder[0].style.borderColor = "#000";
+    }
+};
+
+footerNewsletterLastName.focusout = () => {
+    if (footerNewsletterLastName.value == "") {
+        footerNewsletterLastNameError.innerText =
+            "Please indicate your last name";
+        footerNewsletterInputBorder[1].style.borderColor = "#d70000";
+    } else {
+        footerNewsletterLastNameError.innerText = "";
+        footerNewsletterInputBorder[1].style.borderColor = "#000";
+    }
+};
+
+footerNewsletterFirstName.focusout = () => {
+    if (footerNewsletterFirstName.value == "") {
+        footerNewsletterFirstNameError.innerText =
+            "Please indicate your first name";
+        footerNewsletterInputBorder[2].style.borderColor = "#d70000";
+    } else {
+        footerNewsletterFirstNameError.innerText = "";
+        footerNewsletterInputBorder[2].style.borderColor = "#000";
+    }
+};
