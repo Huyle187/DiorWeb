@@ -1,4 +1,5 @@
-<div class="overplay overlay-default hide" id="side-panel-overplay"></div>
+<div class="overplay overplay-default hide"></div>
+
 <div class="side-panel side-panel__right">
     <div class="side-panel__close">
         <button aria-label="Close the order panel " class="side-panel__close-icon">

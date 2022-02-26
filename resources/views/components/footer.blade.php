@@ -30,7 +30,7 @@
                                         </span>
                                     </div>
                                     <ul class="custom-select-hzn-options hidden">
-                                        <li role="option" tabindex="-1" class="custom-select-hzn-option" id="custom-select-field-civility-option-mme" data-value="Mrs">
+                                        <li role="option" tabindex="-1" class="custom-select-hzn-option custom-select-hzn-options__selected" id="custom-select-field-civility-option-mme" data-value="Mrs">
                                             Mrs
                                         </li>
                                         <li role="option" tabindex="-1" class="custom-select-hzn-option" id="custom-select-field-civility-option-mlle" data-value="Miss">

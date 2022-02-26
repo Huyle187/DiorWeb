@@ -10,7 +10,7 @@
     {{--custom css item suggest search--}}
 @stop
 
-@section('home')
+@section('content')
     <section class="home">
         <div class="page-content news-landing-page">
             <a class="dispatch-element" aria-label="" href="/fashion">

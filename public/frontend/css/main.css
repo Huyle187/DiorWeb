@@ -43,7 +43,7 @@ input::-webkit-search-cancel-button {
     transition: all 0.32s ease-out;
 }
 
-.overlay-default {
+.overplay-default {
     background: rgb(0 0 0/40%);
 }
 

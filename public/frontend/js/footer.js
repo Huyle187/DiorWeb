@@ -163,16 +163,6 @@ for (let i = 0; i < dropdownSubsections.length; i++) {
     }
 }
 
-// loginInput.focusout = () => {
-//     if (loginInput.value == "") {
-//         loginError.innerText = "Please check your email";
-//         loginFormEmailSpanInput.style.borderColor = "#d70000";
-//     } else {
-//         loginError.innerText = "";
-//         loginFormEmailSpanInput.style.borderColor = "#000";
-//     }
-// };
-
 const footerNewsletterEmailInput = $(
     ".footer-newsletter__input .form-group .input #email"
 );

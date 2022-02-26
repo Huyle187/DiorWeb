@@ -1,5 +1,6 @@
 <div class="position-relative">
     <div class="header-placeholder"></div>
+
     <header class="header position-absolute">
         <div class="header__top">
             <!-- Left -->
@@ -80,7 +81,6 @@
             </nav>
         </div>
 
-
         <div class="header__menu-placeholder h-0" id="header__menu-placeholder-1">
             <div class="navigation-tab-second text-uppercase" id="navigation-tab-second-1">
                 <a href="{{ url('/womens-fashion/woman') }}" aria-label="Women's Fashion" target="_self" rel="" tabindex="-1" data-end-to-end="auto_menu_level2_item_69279">Women's Fashion</a>
@@ -104,6 +104,6 @@
                 <a href="{{ url('/skincare/new-skincare') }}" aria-label="Skincare" target="_self" rel="" tabindex="-1" data-end-to-end="auto_menu_level2_item_45679">Skincare</a>
             </div>
         </div>
-
     </header>
 </div>
+

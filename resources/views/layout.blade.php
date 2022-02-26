@@ -30,7 +30,7 @@
 <body>
     @include("components.header")
 
-    @yield("home")
+    @yield("content")
 
     @include("components.footer")
 
@@ -41,7 +41,7 @@
     <script src="{{ ('public/frontend/js/main.js') }}" crossorigin="anonymous"></script>
     <script src="{{ ('public/frontend/js/header.js') }}" crossorigin="anonymous"></script>
     <script src="{{ ('public/frontend/js/footer.js') }}" crossorigin="anonymous"></script>
-    <script src="{{ ('public/frontend/js/side-panel-overlay.js') }}" crossorigin="anonymous"></script>
+    <script src="{{ ('public/frontend/js/side-panel-overplay.js') }}" crossorigin="anonymous"></script>
 
     @yield('scripts')
 </body>
