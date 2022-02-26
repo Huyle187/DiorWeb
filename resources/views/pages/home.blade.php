@@ -13,7 +13,7 @@
 @section('content')
     <section class="home">
         <div class="page-content news-landing-page">
-            <a class="dispatch-element" aria-label="" href="/fashion">
+            <a class="dispatch-element" aria-label="" href="{{ url('/fashion') }}">
                 <div class="dispatch-element__content">
                     <div class="dispatch-element__content__background">
                         <div class="image dispatch-element__content__background__image">
@@ -25,7 +25,7 @@
                     </h1>
                 </div>
             </a>
-            <a class="dispatch-element" aria-label="" href="/beauty">
+            <a class="dispatch-element" aria-label="" href="{{ url('/beauty') }}">
                 <div class="dispatch-element__content">
                     <div class="dispatch-element__content__background">
                         <div class="image dispatch-element__content__background__image">
