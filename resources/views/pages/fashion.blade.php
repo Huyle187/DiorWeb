@@ -4,6 +4,8 @@
 
 @section("styles")
     <link rel="stylesheet" type="text/css" href="{{ ('public/frontend/css/fashion.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ ('public/frontend/css/collections.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ ('public/frontend/css/footer-explore-more.css') }}">
 @stop
 
 @section("responsive")
@@ -12,8 +14,14 @@
 
 @section('content')
     <section class="fashion">
-        fashion
+        @include("components.collections")
+        @include("components.collections")
+        @include("components.collections")
+        @include("components.collections")
+        @include("components.collections")
     </section>
+
+    @include("components.footer-explore-more")
 @stop
 
 @section('scripts')

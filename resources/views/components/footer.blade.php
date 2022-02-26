@@ -8,7 +8,7 @@
                         <div class="form-group">
                             <label for="email" class="label-field">*Your email address</label>
                             <span class="input">
-                                <input id="email" name="email" type="email" aria-describedby="email-error" required="" autocapitalize="none" aria-invalid="true" aria-autocomplete="none" value="" class="text-input">
+                                <input id="email" name="email" type="email" required="" autocapitalize="none" value="" class="text-input">
                                 <span role="status"></span>
                             </span>
                             <span class="error-text" id="email-error"></span>
@@ -19,10 +19,10 @@
                             <div class="form-group">
                                 <label class="title-field text-uppercase position-relative top-0" id="custom-select-field-label-civility">title</label>
                                 <div class="custom-select-hzn custom-select-field__select">
-                                    <div id="custom-select-field-civility-button" aria-expanded="false" aria-haspopup="listbox" class="custom-select-hzn-button" aria-labelledby="custom-select-field-label-civility custom-select-field-civility-button">
+                                    <div id="custom-select-field-civility-button" class="custom-select-hzn-button">
                                         <span class="selected-option">
                                             <span class="selected">Mrs</span>
-                                            <span aria-hidden="true" class="icon css-4bz4q7" color="black">
+                                            <span class="icon css-4bz4q7">
                                                 <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M11.39.6a.54.54 0 00-.78 0L6 5.21 1.39.6a.54.54 0 00-.78 0 .55.55 0 000 .77L6 6.76l5.39-5.39a.55.55 0 000-.77z" fill="currentColor"></path>
                                                 </svg>
@@ -47,7 +47,7 @@
                             <div class="form-group">
                                 <label for="last-name" class="label-field">*Last name</label>
                                 <span class="input">
-                                    <input id="last-name" name="last-name" type="text" aria-describedby="last-name-error" required="" autocapitalize="none" aria-invalid="true" aria-autocomplete="none" value="" class="text-input">
+                                    <input id="last-name" name="last-name" type="text" required="" autocapitalize="none" value="" class="text-input">
                                     <span role="status"></span>
                                 </span>
                                 <span class="error-text" id="last-name-error"></span>
@@ -55,7 +55,7 @@
                             <div class="form-group">
                                 <label for="first-name" class="label-field">*First name</label>
                                 <span class="input">
-                                    <input id="first-name" name="first-name" type="text" aria-describedby="first-name-error" required="" autocapitalize="none" aria-invalid="true" aria-autocomplete="none" value="" class="text-input">
+                                    <input id="first-name" name="first-name" type="text" required="" autocapitalize="none" value="" class="text-input">
                                     <span role="status"></span>
                                 </span>
                                 <span class="error-text" id="first-name-error"></span>
@@ -128,13 +128,13 @@
                 <div class="store-locator-entry-form">
                     <ul class="store-locator-links">
                         <li>
-                            <a class="footer-link" href="#" aria-label="Christian Dior Couture Boutiques">
+                            <a class="footer-link" href="#">
                                 <span class="footer-link__title">Christian Dior Couture Boutiques</span>
                                 <span class="footer-link__border-bottom"></span>
                             </a>
                         </li>
                         <li>
-                            <a class="footer-link" href="#" aria-label="Parfums Christian Dior Boutiques">
+                            <a class="footer-link" href="#">
                                 <span class="footer-link__title">Parfums Christian Dior Boutiques</span>
                                 <span class="footer-link__border-bottom"></span>
                             </a>
@@ -151,7 +151,7 @@
                 <div class="store-locator-entry-form">
                     <ul class="store-locator-links">
                         <li class="dropdown-subsection">
-                            <button class="footer-link w-100" href="#" aria-label="Contact">
+                            <button class="footer-link w-100" href="#">
                                 <span class="footer-link__title">Contact</span>
                                 <span class="footer-link__icon dropdown-button__arrow">
                                     <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -161,14 +161,14 @@
                             </button>
                             <ul class="dropdown-subsection__content w-100 h-0">
                                 <li>
-                                    <a class="footer-link footer-link__animated w-100" href="/contact-couture" aria-label="Contact Couture" target="_self">
+                                    <a class="footer-link footer-link__animated w-100" href="/contact-couture">
                                         <span class="footer-link__title">
                                             Christian Dior Couture
                                         </span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="footer-link footer-link__animated w-100" href="/contact-parfum" aria-label="Contact Perfume" target="_self">
+                                    <a class="footer-link footer-link__animated w-100" href="/contact-parfum">
                                         <span class="footer-link__title">
                                             Parfums Christian Dior
                                         </span>
@@ -177,7 +177,7 @@
                             </ul>
                         </li>
                         <li class="dropdown-subsection">
-                            <button class="footer-link w-100" href="#" aria-label="Delivery and Returns">
+                            <button class="footer-link w-100" href="#">
                                 <span class="footer-link__title">Delivery and Returns</span>
                                 <span class="footer-link__icon dropdown-button__arrow">
                                     <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -187,14 +187,14 @@
                             </button>
                             <ul class="dropdown-subsection__content w-100 h-0">
                                 <li>
-                                    <a class="footer-link footer-link__animated w-100" href="/couture-boutique-advantages" aria-label="Advantage couture" target="_self">
+                                    <a class="footer-link footer-link__animated w-100" href="/couture-boutique-advantages">
                                         <span class="footer-link__title">
                                             Christian Dior Couture
                                         </span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="footer-link footer-link__animated w-100" href="/avantages-eboutique" aria-label="Advantage perfume" target="_self">
+                                    <a class="footer-link footer-link__animated w-100" href="/avantages-eboutique">
                                         <span class="footer-link__title">
                                             Parfums Christian Dior
                                         </span>
@@ -203,7 +203,7 @@
                             </ul>
                         </li>
                         <li class="dropdown-subsection">
-                            <button class="footer-link w-100" href="#" aria-label="FAQ">
+                            <button class="footer-link w-100" href="#">
                                 <span class="footer-link__title">FAQ</span>
                                 <span class="footer-link__icon dropdown-button__arrow">
                                     <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -213,14 +213,14 @@
                             </button>
                             <ul class="dropdown-subsection__content w-100 h-0">
                                 <li>
-                                    <a class="footer-link footer-link__animated w-100" href="/faq-couture" aria-label="" target="_self">
+                                    <a class="footer-link footer-link__animated w-100" href="/faq-couture">
                                         <span class="footer-link__title">
                                             Christian Dior Couture
                                         </span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="footer-link footer-link__animated w-100" href="/faq-parfum" aria-label="" target="_self">
+                                    <a class="footer-link footer-link__animated w-100" href="/faq-parfum">
                                         <span class="footer-link__title">
                                             Parfums Christian Dior
                                         </span>
@@ -240,7 +240,7 @@
                 <div class="store-locator-entry-form">
                     <ul class="store-locator-links">
                         <li class="dropdown-subsection">
-                            <button class="footer-link w-100" href="#" aria-label="Legal Terms and Conditions">
+                            <button class="footer-link w-100" href="#">
                                 <span class="footer-link__title">Legal Terms and Conditions</span>
                                 <span class="footer-link__icon dropdown-button__arrow">
                                     <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -250,14 +250,14 @@
                             </button>
                             <ul class="dropdown-subsection__content w-100 h-0">
                                 <li>
-                                    <a class="footer-link footer-link__animated w-100" href="/legal-terms" aria-label="Legal terms" target="_self">
+                                    <a class="footer-link footer-link__animated w-100" href="/legal-terms">
                                         <span class="footer-link__title">
                                             Christian Dior Couture
                                         </span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="footer-link footer-link__animated w-100" href="/parfum-legal-terms" aria-label="" target="_self">
+                                    <a class="footer-link footer-link__animated w-100" href="/parfum-legal-terms">
                                         <span class="footer-link__title">
                                             Parfums Christian Dior
                                         </span>
@@ -266,25 +266,25 @@
                             </ul>
                         </li>
                         <li>
-                            <a class="footer-link" href="#" aria-label="Data Protection">
+                            <a class="footer-link" href="#">
                                 <span class="footer-link__title">Data Protection</span>
                                 <span class="footer-link__border-bottom"></span>
                             </a>
                         </li>
                         <li>
-                            <a class="footer-link" href="#" aria-label="Cookie Management">
+                            <a class="footer-link" href="#">
                                 <span class="footer-link__title">Cookie Management</span>
                                 <span class="footer-link__border-bottom"></span>
                             </a>
                         </li>
                         <li>
-                            <a class="footer-link" href="#" aria-label="Accessibility">
+                            <a class="footer-link" href="#">
                                 <span class="footer-link__title">Accessibility</span>
                                 <span class="footer-link__border-bottom"></span>
                             </a>
                         </li>
                         <li class="dropdown-subsection">
-                            <button class="footer-link w-100" href="#" aria-label="Delivery and Returns">
+                            <button class="footer-link w-100" href="#">
                                 <span class="footer-link__title">Follow Us</span>
                                 <span class="footer-link__icon dropdown-button__arrow">
                                     <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -294,7 +294,7 @@
                             </button>
                             <ul class="dropdown-subsection__content w-100 h-0">
                                 <li>
-                                    <a class="footer-link footer-link__animated w-100" href="https://www.instagram.com/dior#" aria-label="" target="_blank">
+                                    <a class="footer-link footer-link__animated w-100" href="https://www.instagram.com/dior#" target="_blank">
                                         <span class="footer-link__title">Instagram</span>
                                         <span class="icon css-ya210c" height="20" width="20">
                                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -305,7 +305,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="footer-link footer-link__animated w-100" href="#" aria-label="" target="_blank">
+                                    <a class="footer-link footer-link__animated w-100" href="#" target="_blank">
                                         <span class="footer-link__title">Twitter</span>
                                         <span class="icon css-ya210c" height="20" width="20">
                                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -315,7 +315,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="footer-link footer-link__animated w-100" href="#" aria-label="" target="_blank">
+                                    <a class="footer-link footer-link__animated w-100" href="#" target="_blank">
                                         <span class="footer-link__title">Facebook</span>
                                         <span class="icon css-ya210c" height="20" width="20">
                                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -325,19 +325,19 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="footer-link footer-link__animated w-100" href="#" aria-label="" target="_blank">
+                                    <a class="footer-link footer-link__animated w-100" href="#" target="_blank">
                                         <span class="footer-link__title">Tiktok</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="footer-link footer-link__animated w-100" href="#" aria-label="" target="_blank">
+                                    <a class="footer-link footer-link__animated w-100" href="#" target="_blank">
                                         <span class="footer-link__title">Snapchat</span>
                                     </a>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <a class="footer-link" href="#" aria-label="Careers">
+                            <a class="footer-link" href="#">
                                 <span class="footer-link__title">Careers</span>
                                 <span class="footer-link__border-bottom"></span>
                             </a>

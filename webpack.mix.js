@@ -16,4 +16,6 @@ mix.sass("resources/scss/header.scss", "public/frontend/css")
     .sass("resources/scss/footer.scss", "public/frontend/css")
     .sass("resources/scss/home.scss", "public/frontend/css")
     .sass("resources/scss/beauty.scss", "public/frontend/css")
-    .sass("resources/scss/fashion.scss", "public/frontend/css");
+    .sass("resources/scss/fashion.scss", "public/frontend/css")
+    .sass("resources/scss/collections.scss", "public/frontend/css")
+    .sass("resources/scss/footer-explore-more.scss", "public/frontend/css");

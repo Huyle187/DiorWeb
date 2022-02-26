@@ -1,0 +1,50 @@
+.collections {
+    margin: 0.8rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+    &__image-infos {
+        flex: 1;
+        padding: 1.6rem 0;
+        padding-bottom: 0;
+        max-width: calc(100% - 12.4rem - 4rem);
+
+        .collections-image-link {
+            cursor: pointer;
+            display: inline-flex;
+            flex-direction: column;
+            height: 100%;
+
+            .collections-subtitle {
+                font-size: 1.3rem;
+                line-height: 2.1rem;
+                margin-bottom: 1.2rem;
+                color: #757575;
+            }
+
+            .collections-title {
+                padding: 0 0.4rem;
+                margin-bottom: 1.6rem;
+                font-size: 2.2rem;
+                line-height: 3rem;
+                width: 100%;
+            }
+
+            .static-button {
+                width: 22.5rem;
+                font-size: 1.3rem;
+                line-height: 2rem;
+
+                .button {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.collections + .collections {
+    margin-top: 6.4rem;
+}
