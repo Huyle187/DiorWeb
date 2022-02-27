@@ -6,7 +6,7 @@
             <!-- Left -->
             <nav id="nav" class="header__top__navigation">
                 <div class="navigation-tab" id="navigation-tab-1">
-                    <a class="open text-uppercase" href="{{ url('/fashion') }}" aria-label="FASHION &amp; ACCESSORIES" target="_self" rel="" tabindex="1" data-end-to-end="auto_menu_tab_fashion">FASHION &amp; ACCESSORIES</a>
+                    <a class="open text-uppercase text-shadow-fashion" href="{{ url('/fashion') }}" aria-label="FASHION &amp; ACCESSORIES" target="_self" rel="" tabindex="1" data-end-to-end="auto_menu_tab_fashion">FASHION &amp; ACCESSORIES</a>
                 </div>
                 <div class="navigation-tab" id="navigation-tab-2">
                     <a class="open text-uppercase" href="{{ url('/beauty') }}" aria-label="FRAGRANCE &amp; BEAUTY" target="_self" rel="" tabindex="1" data-end-to-end="auto_menu_tab_beauty">FRAGRANCE &amp; BEAUTY</a>
@@ -81,7 +81,7 @@
             </nav>
         </div>
 
-        <div class="header__menu-placeholder h-0" id="header__menu-placeholder-1">
+        <div class="header__menu-placeholder h-0 additionalClassHeaderMenuPlaceholder" id="header__menu-placeholder-1">
             <div class="navigation-tab-second text-uppercase" id="navigation-tab-second-1">
                 <a href="{{ url('/womens-fashion/woman') }}" aria-label="Women's Fashion" target="_self" rel="" tabindex="-1" data-end-to-end="auto_menu_level2_item_69279">Women's Fashion</a>
             </div>
@@ -93,7 +93,7 @@
             </div>
         </div>
 
-        <div class="header__menu-placeholder h-0" id="header__menu-placeholder-2">
+        <div class="header__menu-placeholder h-0 additionalClassHeaderMenuPlaceholder" id="header__menu-placeholder-2">
             <div class="navigation-tab-second text-uppercase" id="navigation-tab-second-4">
                 <a href="{{ url('/womens-fragance/new') }}" aria-label="Women's Fragrance" target="_self" rel="" tabindex="-1" data-end-to-end="auto_menu_level2_item_146619">Women's Fragrance</a>
             </div>

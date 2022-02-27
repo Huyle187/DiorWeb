@@ -90,22 +90,24 @@ headerInputSearchId.onfocus = function () {
     inputSearchBorder.style.backgroundColor = "#000";
 };
 
-hoverNavigationTabs(navigationTab1, headerMenuPlaceholder1);
-hoverNavigationTabs(navigationTab2, headerMenuPlaceholder2);
+if (window.location.pathname != "/dior-informal-website/fashion") {
+    hoverNavigationTabs(navigationTab1, headerMenuPlaceholder1);
+    hoverNavigationTabs(navigationTab2, headerMenuPlaceholder2);
 
-headerMenuPlaceholder1.onmouseover = () => {
-    navigationTab2MouseOver(navigationTab1, headerMenuPlaceholder1);
-};
-headerMenuPlaceholder1.onmouseout = () => {
-    navigationTab2MouseOut(navigationTab1, headerMenuPlaceholder1);
-};
+    headerMenuPlaceholder1.onmouseover = () => {
+        navigationTab2MouseOver(navigationTab1, headerMenuPlaceholder1);
+    };
+    headerMenuPlaceholder1.onmouseout = () => {
+        navigationTab2MouseOut(navigationTab1, headerMenuPlaceholder1);
+    };
 
-headerMenuPlaceholder2.onmouseover = () => {
-    navigationTab2MouseOver(navigationTab2, headerMenuPlaceholder2);
-};
-headerMenuPlaceholder2.onmouseout = () => {
-    navigationTab2MouseOut(navigationTab2, headerMenuPlaceholder2);
-};
+    headerMenuPlaceholder2.onmouseover = () => {
+        navigationTab2MouseOver(navigationTab2, headerMenuPlaceholder2);
+    };
+    headerMenuPlaceholder2.onmouseout = () => {
+        navigationTab2MouseOut(navigationTab2, headerMenuPlaceholder2);
+    };
+}
 
 for (let nTS = 0; nTS < navigationTabSeconds.length; nTS++) {
     const navigationTabSecond = navigationTabSeconds[nTS];
