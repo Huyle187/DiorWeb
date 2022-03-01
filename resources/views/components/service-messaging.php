@@ -1,19 +1,4 @@
 <div class="service-messaging">
-    <button class="service-messaging__activation-button">
-        <span class="icon css-f86pio show" id="pause-icon">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20 0H0v20h20V0z"></path>
-                <path d="M7.25 16.05a.55.55 0 01-.55-.55v-11a.55.55 0 111.1 0v11a.55.55 0 01-.55.55zM12.71 16.05a.55.55 0 01-.55-.55v-11a.55.55 0 011.1.05v11a.55.55 0 01-.55.5z" fill="currentColor"></path>
-            </svg>
-        </span>
-
-        <span class="icon css-f86pio hide" id="play-icon">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20 0H0v20h20V0z"></path>
-                <path d="M4.5 2.64v14.72l13-7.36-13-7.36zm1 1.72l10 5.64-10 5.64V4.36z" fill="currentColor"></path>
-            </svg>
-        </span>
-    </button>
     <ul class="service-messaging-animated customer-logos slider">
         <li class="service-messaging-animated__slider__item">
             <span class="text-uppercase fw700">DIOR.COM BENEFITS</span>

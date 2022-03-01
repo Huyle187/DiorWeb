@@ -6,10 +6,10 @@
             <!-- Left -->
             <nav id="nav" class="header__top__navigation">
                 <div class="navigation-tab" id="navigation-tab-1">
-                    <a class="open text-uppercase text-shadow-fashion" href="{{ url('/fashion') }}" aria-label="FASHION &amp; ACCESSORIES" target="_self" rel="" tabindex="1" data-end-to-end="auto_menu_tab_fashion">FASHION &amp; ACCESSORIES</a>
+                    <a class="open text-uppercase" href="{{ url('/fashion') }}" tabindex="1" data-end-to-end="auto_menu_tab_fashion">FASHION &amp; ACCESSORIES</a>
                 </div>
                 <div class="navigation-tab" id="navigation-tab-2">
-                    <a class="open text-uppercase" href="{{ url('/beauty') }}" aria-label="FRAGRANCE &amp; BEAUTY" target="_self" rel="" tabindex="1" data-end-to-end="auto_menu_tab_beauty">FRAGRANCE &amp; BEAUTY</a>
+                    <a class="open text-uppercase" href="{{ url('/beauty') }}" tabindex="1" data-end-to-end="auto_menu_tab_beauty">FRAGRANCE &amp; BEAUTY</a>
                 </div>
             </nav>
             <!-- Middle -->

@@ -120,3 +120,9 @@ for (let nTS = 0; nTS < navigationTabSeconds.length; nTS++) {
         navigationTabSecond.classList.remove("text-shadow");
     };
 }
+
+if (window.location.pathname == "/dior-informal-website/fashion") {
+    navigationTab1.style.textShadow = "0 -1px 1px #000";
+} else if (window.location.pathname == "/dior-informal-website/beauty") {
+    navigationTab2.style.textShadow = "0 -1px 1px #000";
+}
