@@ -20,6 +20,11 @@ const navigationTabSecond6 = $("#navigation-tab-second-6");
 const headerMenuPlaceholders = $$(".header__menu-placeholder");
 const headerMenuPlaceholder1 = $("#header__menu-placeholder-1");
 const headerMenuPlaceholder2 = $("#header__menu-placeholder-2");
+// pathname
+const pathnameFashion = "/dior-informal-website/fashion";
+const pathnameBeauty = "/dior-informal-website/beauty";
+const pathnameItem =
+    "/dior-informal-website/women-fashion-spring-summer-2022-collection";
 
 function openWrapperAndBorder() {
     if (
@@ -90,25 +95,6 @@ headerInputSearchId.onfocus = function () {
     inputSearchBorder.style.backgroundColor = "#000";
 };
 
-if (window.location.pathname != "/dior-informal-website/fashion") {
-    hoverNavigationTabs(navigationTab1, headerMenuPlaceholder1);
-    hoverNavigationTabs(navigationTab2, headerMenuPlaceholder2);
-
-    headerMenuPlaceholder1.onmouseover = () => {
-        navigationTab2MouseOver(navigationTab1, headerMenuPlaceholder1);
-    };
-    headerMenuPlaceholder1.onmouseout = () => {
-        navigationTab2MouseOut(navigationTab1, headerMenuPlaceholder1);
-    };
-
-    headerMenuPlaceholder2.onmouseover = () => {
-        navigationTab2MouseOver(navigationTab2, headerMenuPlaceholder2);
-    };
-    headerMenuPlaceholder2.onmouseout = () => {
-        navigationTab2MouseOut(navigationTab2, headerMenuPlaceholder2);
-    };
-}
-
 for (let nTS = 0; nTS < navigationTabSeconds.length; nTS++) {
     const navigationTabSecond = navigationTabSeconds[nTS];
 
@@ -121,8 +107,8 @@ for (let nTS = 0; nTS < navigationTabSeconds.length; nTS++) {
     };
 }
 
-if (window.location.pathname == "/dior-informal-website/fashion") {
+if (window.location.pathname == pathnameFashion) {
     navigationTab1.style.textShadow = "0 -1px 1px #000";
-} else if (window.location.pathname == "/dior-informal-website/beauty") {
+} else if (window.location.pathname == pathnameBeauty) {
     navigationTab2.style.textShadow = "0 -1px 1px #000";
 }

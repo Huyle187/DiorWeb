@@ -1,0 +1,58 @@
+.grid-view-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 3.5rem;
+}
+.grid-view-content .grid-view-element {
+  margin-bottom: 3.2rem;
+}
+.grid-view-content .grid-view-element .product {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.grid-view-content .grid-view-element .product-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.grid-view-content .grid-view-element .product-wrapper .product-legend {
+  margin-top: 1.4rem;
+  margin-left: 0.5rem;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3rem;
+  line-height: 2.1rem;
+}
+.grid-view-content .grid-view-element .product-wrapper .product-legend .product-title {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+.grid-view-content .grid-view-element .product-wrapper .product-legend .price-line {
+  margin-top: 1.2rem;
+  font-weight: 700;
+}
+.grid-view-content .grid-view-element .product .popin-openers {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+.grid-view-content .grid-view-element .product .popin-openers__content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: flex-end;
+  bottom: 0;
+  right: 1rem;
+  max-height: 11rem;
+}
+.grid-view-content .grid-view-element .product .popin-openers__content .quick-buy {
+  border-radius: 50%;
+  border: 1px solid #e5e5e5;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

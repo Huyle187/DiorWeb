@@ -1,0 +1,119 @@
+.collection__page-content {
+  margin: 2rem 2rem 4rem 2rem;
+}
+.collection__page-content .page-title {
+  margin-top: 5.2rem;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.collection__page-content .page-title .multiline-text {
+  font-size: 4rem;
+  line-height: 4.8rem;
+}
+.collection__page-content .page-cover {
+  margin: 0.8rem 0 0;
+}
+.collection__page-content .page-cover-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 144rem;
+  text-align: center;
+}
+.collection__page-content .page-cover-wrapper .page-cover__description {
+  max-width: 50rem;
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 2.1rem;
+  align-self: center;
+}
+.collection__page-content .merchandisingFilters {
+  margin-top: 6.4rem;
+}
+.collection__page-content .merchandisingFilters .filters-bar-expanded {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%);
+}
+.collection__page-content .merchandisingFilters .filters-bar-expanded__content {
+  margin: 0 4rem 1.6rem 4rem;
+  display: flex;
+  align-items: center;
+  flex: 1 1 100%;
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.collection__page-content .merchandisingFilters .filters-bar-expanded__content__slider {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  width: 0;
+  border-left: 1px solid #000;
+}
+.collection__page-content .merchandisingFilters .filters-bar-expanded__content__slider__wrapper {
+  display: flex;
+  flex: 1;
+  width: 100%;
+}
+.collection__page-content .merchandisingFilters .filters-bar-expanded__content__slider__wrapper .filter-bar-items {
+  display: flex;
+  width: 85%;
+}
+.collection__page-content .merchandisingFilters .filters-bar-expanded__content__slider__wrapper .filter-bar-items .filter-bar-slider-wrapper {
+  width: 100%;
+}
+.collection__page-content .merchandisingFilters .filters-bar-expanded__content__slider__wrapper .filter-bar-items .filter-bar-slider-wrapper .smooth-slider {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+.collection__page-content .merchandisingFilters .filters-bar-expanded__content__slider__wrapper .filter-bar-items .filter-bar-slider-wrapper .smooth-slider__slider__content__children {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding-left: 1.6rem;
+}
+.collection__page-content .merchandisingFilters .filters-bar-expanded__content__slider__wrapper .filter-bar-items .filter-bar-slider-wrapper .smooth-slider__slider__content__children .selectCell__cell__title {
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  line-height: 2.1rem;
+}
+.collection__page-content .merchandisingFilters .filters-bar-expanded__content__slider__wrapper .filter-bar-items .filter-bar-slider-wrapper .smooth-slider__slider__content__children .selectCell__cell__icon {
+  padding: 0 0 0 0.4rem;
+}
+.collection__page-content .merchandisingFilters .filters-bar-expanded__content__slider__wrapper .filter-bar-items .filter-bar-slider-wrapper .smooth-slider__slider__content__children .box {
+  margin-right: 0.4rem;
+}
+.collection__page-content .merchandisingFilters .filters-bar-expanded__content__right {
+  display: flex;
+  flex: 0;
+  align-items: center;
+}
+.collection__page-content .merchandisingFilters .filters-bar-expanded__content__right__products-count {
+  font-size: 1.3rem;
+  line-height: 2.1rem;
+  color: #757575;
+  padding-left: 6.4rem;
+  white-space: nowrap;
+}
+.collection__page-content .merchandisingFilters .filters-bar-expanded__content__right .selectCell {
+  border-left: 1px solid #000;
+  display: flex;
+  align-items: center;
+  padding-left: 1.6rem;
+  margin-left: 1.6rem;
+  cursor: pointer;
+}
+.collection__page-content .merchandisingFilters .filters-bar-expanded__content__right .selectCell__cell__title {
+  font-size: 1.3rem;
+  line-height: 2.1rem;
+  white-space: nowrap;
+}
+.collection__page-content .merchandisingFilters .filters-bar-expanded__content__right .selectCell .icon {
+  padding-left: 0.4rem;
+}
