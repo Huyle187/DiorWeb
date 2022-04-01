@@ -80,7 +80,12 @@
 
                         <div class="filters-bar-expanded__content__right">
                             <div class="filters-bar-expanded__content__right__products-count">
-                                98 Articles
+                                @if ($list->total() < 10)
+                                    0{{ $list->total() }} 
+                                @else
+                                    {{ $list->total() }} 
+                                @endif
+                                Articles
                             </div>
                             <div class="selectCell">
                                 <span class="selectCell__cell__title">
@@ -100,68 +105,11 @@
             </div>
 
             <ul class="grid-view-content">
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
-                @include("components.item")
+                @if ($list->count() == 0)
+                    Sorry – there are no results for your search "{{ $search }}". Please try again or consult our bestsellers:               
+                @else
+                    @include("components.item")
+                @endif
             </ul>
         </div>
     </section>

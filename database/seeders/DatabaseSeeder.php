@@ -15,5 +15,12 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // \App\Models\User::factory(10)->create();
+        DB::table('users')->insert([
+            'name' => 'Huy',
+            'email' => 'huy@gmail.com',
+            'password' => Hash::make('123456'),
+            'enable'=>1,
+            'access_level'=>1,
+        ]);
     }
 }

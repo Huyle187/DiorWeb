@@ -105,6 +105,13 @@ accountTabHeader.onclick = () => {
     );
 };
 
+// if (window.location.pathname == '/dior-informal-website/admin') {
+//     setTimeout(() => {
+//         accountTabHeader?.click();      
+//     },500)
+// }
+
+
 // Click on the cart tab header
 cartTabHeader.onclick = () => {
     tabHeaderButton(cartTabHeader, wishlistTabHeader, accountTabHeader);

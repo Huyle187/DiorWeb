@@ -8,14 +8,19 @@
         <p class="multiline-text account-panel-content__account__login__subtitle">
             To access your account
         </p>
-        <form action="POST" class="login-form">
+        <form method="POST" class="login-form">
             <div class="form-group login-form__email">
                 <label for="login" class="label-field">*Email address</label>
                 <span class="input">
-                    <input id="login" name="login" type="email" aria-describedby="login-error" required="" autocapitalize="none" aria-invalid="true" autocomplete="email" aria-autocomplete="none" value="">
+                    <input id="login" name="email" type="email" aria-describedby="login-error" required="" autocapitalize="none" aria-invalid="true" autocomplete="email" aria-autocomplete="none" value="">
                     <span role="status"></span>
                 </span>
                 <span class="error-text" id="login-error"></span>
+                @if (session('error'))
+                    <div class="text-danger" >
+                        {{ session('error') }}
+                    </div>
+                @endif
             </div>
             <div class="password-field login-form__password">
                 <div class="form-group password-field__input">
@@ -45,7 +50,7 @@
                 I forgot my password
             </button>
             <div class="login-form-actions">
-                <button class="button login-form-actions-submit text-uppercase background-color-black color-white disabled">
+                <button type="submit" class="button login-form-actions-submit text-uppercase background-color-black color-white disabled">
                     <span class="button-link-content">
                         <span class="button-link__title">Sign in</span>
                     </span>
