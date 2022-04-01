@@ -26,29 +26,6 @@ const pathnameBeauty = "/dior-informal-website/beauty";
 const pathnameItem =
     "/dior-informal-website/women-fashion-spring-summer-2022-collection";
 
-function openWrapperAndBorder() {
-    if (
-        inputSearchInputWrapper.classList.contains("wrapper-is-close") &&
-        inputSearchBorder.classList.contains("border-is-close")
-    ) {
-        inputSearchInputWrapper.classList.remove("wrapper-is-close");
-        inputSearchBorder.classList.remove("border-is-close");
-
-        inputSearchInputWrapper.classList.add("wrapper-is-open");
-        inputSearchBorder.classList.add("border-is-open");
-    }
-}
-
-function closeWrapperAndBorder() {
-    inputSearchInputWrapper.classList.remove("wrapper-is-open");
-    inputSearchBorder.classList.remove("border-is-open");
-
-    inputSearchInputWrapper.classList.add("wrapper-is-close");
-    inputSearchBorder.classList.add("border-is-close");
-
-    inputSearchBorder.style.backgroundColor = "#b3b3b3";
-}
-
 function hoverNavigationTabs(navigationTab, headerMenuPlaceholder) {
     navigationTab.onmouseover = () => {
         navigationTab.classList.add("text-shadow");
@@ -82,14 +59,6 @@ function navigationTab2MouseOut(navigationTab, headerMenuPlaceholder) {
     headerMenuPlaceholder.classList.add("h-0");
     headerMenuPlaceholder.style.borderTop = "";
 }
-
-inputSearchButton.onmouseover = function () {
-    openWrapperAndBorder();
-};
-
-headerInputSearchId.onblur = function () {
-    closeWrapperAndBorder();
-};
 
 headerInputSearchId.onfocus = function () {
     inputSearchBorder.style.backgroundColor = "#000";

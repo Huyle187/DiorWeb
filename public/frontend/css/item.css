@@ -33,6 +33,9 @@
   margin-top: 1.2rem;
   font-weight: 700;
 }
+.grid-view-content .grid-view-element .product-wrapper .product-image img {
+  width: 100%;
+}
 .grid-view-content .grid-view-element .product .popin-openers {
   display: flex;
   flex: 1;

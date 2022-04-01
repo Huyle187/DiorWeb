@@ -10,7 +10,7 @@
             <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                 <i class="fa fa-bars"></i>
             </button>
-    
+
             <!-- Topbar Search -->
             <form
                 class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
@@ -24,10 +24,10 @@
                     </div>
                 </div>
             </form>
-    
+
             <!-- Topbar Navbar -->
             <ul class="navbar-nav ml-auto">
-    
+
                 <!-- Nav Item - Search Dropdown (Visible Only XS) -->
                 <li class="nav-item dropdown no-arrow d-sm-none">
                     <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
@@ -51,7 +51,7 @@
                         </form>
                     </div>
                 </li>
-    
+
                 <!-- Nav Item - Alerts -->
                 <li class="nav-item dropdown no-arrow mx-1">
                     <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
@@ -102,7 +102,7 @@
                         <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
                     </div>
                 </li>
-    
+
                 <!-- Nav Item - Messages -->
                 <li class="nav-item dropdown no-arrow mx-1">
                     <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
@@ -168,9 +168,9 @@
                         <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
                     </div>
                 </li>
-    
+
                 <div class="topbar-divider d-none d-sm-block"></div>
-    
+
                 <!-- Nav Item - User Information -->
                 <li class="nav-item dropdown no-arrow">
                     <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
@@ -201,15 +201,15 @@
                         </a>
                     </div>
                 </li>
-    
+
             </ul>
-    
+
         </nav>
     <!-- End of Topbar -->
 
-    
+
     <!-- Content -->
-    
+
     <div class="card">
         <div class="card-header">
             <div class="row">
@@ -263,15 +263,15 @@
                             Số Lượng Tồn
                         </th>
                         <th></th>
-                    </tr>    
+                    </tr>
                 </thead>
-    
+
                 <tbody>
                     @foreach ($list as $row)
 
                         <tr>
                             <td>
-                                <img src="{{ asset('..'.$row->hinhanh) }}" style="height: 70px; width: 70px;">
+                                <img src="{{ asset($row->hinhanh) }}" style="height: 70px; width: 70px;">
                             </td>
                             <td>
                                 {{$row->tensanpham}}
@@ -301,13 +301,13 @@
                                 </a>
                             </td>
                         </tr>
-                    
+
                     @endforeach
                 </tbody>
             </table>
         </div>
     </div>
-    
+
     <!-- End of Content -->
 @endsection
 

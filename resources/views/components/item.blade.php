@@ -3,7 +3,7 @@
         <div class="product">
                 <a href="product/dior-bobby-east-west-bag" class="product-wrapper">
                     <div class="product-image">
-                        <img src="{{asset('..'.$row->hinhanh) }}" alt="{{$row->tensanpham}}">
+                        <img src="{{asset($row->hinhanh) }}" alt="{{$row->tensanpham}}">
                     </div>
                     <div class="product-legend">
                         <span class="product-title">
@@ -15,7 +15,7 @@
                         </span>
                     </div>
                 </a>
-            
+
                 <div class="popin-openers">
                     <div class="popin-openers__content">
                         <button class="quick-buy">

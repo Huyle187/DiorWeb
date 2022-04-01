@@ -51,65 +51,28 @@
   width: 19.6rem;
   height: 2.3rem;
 }
+.header__top__nav ul .header-icon .input-search__wrapper .input-search__input-wrapper {
+  width: 100%;
+}
 .header__top__nav ul .header-icon .input-search__wrapper {
   display: flex;
   justify-content: space-between;
 }
-.header__top__nav ul .header-icon .input-search__wrapper .input-search-button {
+.header__top__nav ul .header-icon .input-search__wrapper .lib-header-components-search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  color: #757575;
+}
+.header__top__nav ul .header-icon .input-search__wrapper .lib-header-components-search .input-search-button {
   z-index: 1;
 }
-.header__top__nav ul .header-icon .input-search .input-search__input-wrapper {
-  opacity: 0;
-  visibility: hidden;
-  width: 100%;
-}
-.header__top__nav ul .header-icon .input-search .input-search__input-wrapper.wrapper-is-close {
-  transition: opacity 0.24s ease-out;
-}
-.header__top__nav ul .header-icon .input-search .input-search__input-wrapper.wrapper-is-open {
-  opacity: 1;
-  visibility: visible;
-  transition: opacity 0.24s ease-in 0.17s;
-}
-.header__top__nav ul .header-icon .input-search .input-search__input-wrapper .lib-header-search-field {
-  margin-right: 2rem;
-  width: 100%;
-  height: 100%;
-  max-width: 30rem;
-}
-.header__top__nav ul .header-icon .input-search .input-search__input-wrapper .lib-header-search-field div .lib-header-components-search .react-autosuggest__container {
-  width: 100%;
-}
-.header__top__nav ul .header-icon .input-search .input-search__input-wrapper .lib-header-search-field div .lib-header-components-search .react-autosuggest__container .react-autosuggest__input {
-  padding: 0 25% 0 0;
-  width: 120%;
-  font-size: 1.3rem;
-  line-height: 2.1rem;
-}
-.header__top__nav ul .header-icon .input-search .input-search__input-wrapper .lib-header-search-field div .lib-header-components-search .react-autosuggest__container .react-autosuggest__input::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.7);
-}
-.header__top__nav ul .header-icon .input-search .input-search__input-wrapper .lib-header-search-field div .lib-header-components-search .react-autosuggest__container .react-autosuggest__input:-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.7);
-}
-.header__top__nav ul .header-icon .input-search .input-search__input-wrapper .lib-header-search-field div .lib-header-components-search .react-autosuggest__container .react-autosuggest__input::placeholder {
-  color: rgba(0, 0, 0, 0.7);
-}
 .header__top__nav ul .header-icon .input-search__border {
-  width: 0;
-  float: right;
   display: block;
   height: 0.1rem;
   background-color: #b3b3b3;
   transition: background-color 0.24s;
-}
-.header__top__nav ul .header-icon .input-search__border.border-is-close {
-  transition: width 0.24s ease-out;
-  width: 0;
-}
-.header__top__nav ul .header-icon .input-search__border.border-is-open {
-  transition: width 0.24s ease-in;
-  width: 19.6rem;
 }
 .header__menu-placeholder {
   transition: all 0.1s;

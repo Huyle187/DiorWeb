@@ -1,4 +1,4 @@
-@extends('layouts.admin')
+@extends("layout")
 
 @section('tittle', 'Update Product')
 
@@ -7,12 +7,12 @@
     <h2 class="col-md-6 text-danger">
         <b>CẬP NHẬT SẢN PHẨM</b>
     </h2>
-    
+
     <form action=" {{ route('product.update' , ['id' => $list->masanpham]) }} " method="POST" enctype="multipart/form-data">
         @csrf
         <div class="form-horizontal">
             <hr />
-    
+
             <div class="form-group">
                 <label class="control-label col-md-2" for="">Tên Sản Phẩm</label>
                 <div class="col-md-10">
@@ -22,7 +22,7 @@
                     <span class="text-danger col-md-10"> {{ $errors->first('tensanpham') }} </span>
                 @endif
             </div>
-    
+
             <div class="form-group">
                 <label class="control-label col-md-2">Loại Hàng</label>
                 <div class="col-md-10">
@@ -33,7 +33,7 @@
                                 <option selected value="{{ $row->id }}">{{ $row->tenloaihang }}</option>
                             @else
                                 <option value="{{ $row->id }}">{{ $row->tenloaihang }}</option>
-                            @endif                        
+                            @endif
                         @endforeach
                     </select>
                 </div>
@@ -41,7 +41,7 @@
                     <span class="text-danger col-md-10">{{ $errors->first('maloaihang') }}</span>
                 @endif
             </div>
-    
+
             <div class="form-group">
                 <label class="control-label col-md-2">Giá Bán</label>
                 <div class="col-md-10">
@@ -68,7 +68,7 @@
             </div>
 
             <div>
-                <label class="control-label col-md-2">Hình Ảnh Cũ</label> 
+                <label class="control-label col-md-2">Hình Ảnh Cũ</label>
                 <img src="{{ asset('..'.$list->hinhanh) }}" style="height: 70px; width: 70px;">
             </div><br>
 
@@ -83,8 +83,8 @@
                 </div>
                 @endif
             </div>
-           
-    
+
+
             <div class="form-group">
                 <label class="control-label col-md-2">Số Lượng Tồn</label>
                 <div class="col-md-10">
@@ -94,7 +94,7 @@
                     <span class="text-danger col-md-10">{{ $errors->first('soluongton') }}</span>
                 @endif
             </div>
-    
+
             <div class="form-group">
                 <label class="control-label col-md-2">Mô tả chi tiết</label>
                 <div class="col-md-10">
@@ -104,7 +104,7 @@
                     <span class="text-danger col-md-10">{{ $errors->first('mota') }}</span>
                 @endif
             </div>
-    
+
             <div class="form-group">
                 <div class="col-md-10">
                     <a class="btn btn-sm btn-info" href="{{ route('dashboard')}}">

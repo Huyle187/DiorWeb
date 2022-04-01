@@ -57,89 +57,33 @@
                         height: 2.3rem;
 
                         &__wrapper {
-                            display: flex;
-                            justify-content: space-between;
-
-                            .input-search-button {
-                                z-index: 1;
+                            .input-search__input-wrapper {
+                                width: 100%;
                             }
                         }
 
-                        .input-search__input-wrapper {
-                            opacity: 0;
-                            visibility: hidden;
-                            width: 100%;
+                        &__wrapper {
+                            display: flex;
+                            justify-content: space-between;
 
-                            &.wrapper-is-close {
-                                transition: opacity 0.24s ease-out;
-                            }
+                            .lib-header-components-search {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                font-size: 1.2rem;
+                                color: #757575;
 
-                            &.wrapper-is-open {
-                                opacity: 1;
-                                visibility: visible;
-                                transition: opacity 0.24s ease-in 0.17s;
-                            }
-
-                            .lib-header-search-field {
-                                margin-right: 2rem;
-                                width: 100%;
-                                height: 100%;
-                                max-width: 30rem;
-
-                                div {
-                                    .lib-header-components-search {
-                                        .react-autosuggest__container {
-                                            width: 100%;
-
-                                            .react-autosuggest__input {
-                                                padding: 0 25% 0 0;
-                                                width: 120%;
-                                                font-size: 1.3rem;
-                                                line-height: 2.1rem;
-
-                                                &::-webkit-input-placeholder {
-                                                    color: rgba(0, 0, 0, 0.7);
-                                                }
-
-                                                &::-moz-placeholder {
-                                                    color: rgba(0, 0, 0, 0.7);
-                                                }
-
-                                                &:-ms-input-placeholder {
-                                                    color: rgba(0, 0, 0, 0.7);
-                                                }
-
-                                                &::-ms-input-placeholder {
-                                                    color: rgba(0, 0, 0, 0.7);
-                                                }
-
-                                                &::placeholder {
-                                                    color: rgba(0, 0, 0, 0.7);
-                                                }
-                                            }
-                                        }
-                                    }
+                                .input-search-button {
+                                    z-index: 1;
                                 }
                             }
                         }
 
                         &__border {
-                            width: 0;
-                            float: right;
                             display: block;
                             height: 0.1rem;
                             background-color: #b3b3b3;
                             transition: background-color 0.24s;
-
-                            &.border-is-close {
-                                transition: width 0.24s ease-out;
-                                width: 0;
-                            }
-
-                            &.border-is-open {
-                                transition: width 0.24s ease-in;
-                                width: 19.6rem;
-                            }
                         }
                     }
                 }

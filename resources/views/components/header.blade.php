@@ -28,27 +28,18 @@
                             <div class="input-search__wrapper">
                                 <div class="input-search__input-wrapper wrapper-is-close">
                                     <div role="search" class="lib-header-search-field">
-                                        <div>
-                                            <form action="" class="lib-header-components-search search-bar-autocomplete" role="form">
-                                                <div role="comboBox" class="react-autosuggest__container">
-                                                    <input type="search" name="searchCollection" id="header_input_search_id" autocomplete="off" class="react-autosuggest__input" placeholder="What are you looking for?" value>
-                                                </div>
-                                                <button type="submit">
-                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M17.17 16.48L12 11.36a5.5 5.5 0 10-4.22 2 5.41 5.41 0 003.51-1.27l5.14 5.13a.51.51 0 00.7 0 .5.5 0 00.04-.74zm-9.35-4.15a4.5 4.5 0 110-9 4.5 4.5 0 010 9z" fill="currentColor"></path>
-                                                    </svg>
-                                                </button>
-                                            </form>
-                                        </div>
+                                        <form class="lib-header-components-search search-bar-autocomplete" role="form">
+                                            <div role="comboBox" class="react-autosuggest__container">
+                                                <input type="search" name="searchCollection" id="header_input_search_id" autocomplete="off" class="react-autosuggest__input" placeholder="What are you looking for?" value>
+                                            </div>
+                                            <button type="submit" class="input-search-button">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M17.17 16.48L12 11.36a5.5 5.5 0 10-4.22 2 5.41 5.41 0 003.51-1.27l5.14 5.13a.51.51 0 00.7 0 .5.5 0 00.04-.74zm-9.35-4.15a4.5 4.5 0 110-9 4.5 4.5 0 010 9z" fill="currentColor"></path>
+                                                </svg>
+                                            </button>
+                                        </form>
                                     </div>
                                 </div>
-                                <button aria-label="aria_searchButtonOpen" class="input-search-button" tabindex="1">
-                                    <span class="icon">
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M17.17 16.48L12 11.36a5.5 5.5 0 10-4.22 2 5.41 5.41 0 003.51-1.27l5.14 5.13a.51.51 0 00.7 0 .5.5 0 00.04-.74zm-9.35-4.15a4.5 4.5 0 110-9 4.5 4.5 0 010 9z" fill="currentColor"></path>
-                                        </svg>
-                                    </span>
-                                </button>
                             </div>
                             <span class="input-search__border border-is-close"></span>
                         </div>
