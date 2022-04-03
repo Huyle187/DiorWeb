@@ -1,0 +1,16 @@
+.cart-table {
+    padding: 2rem;
+
+    .table {
+        .btn-info {
+            background-color: unset;
+            font-size: 1.4rem;
+            line-height: 2.1rem;
+            height: 4rem;
+        }
+
+        tfoot {
+            border-top: unset;
+        }
+    }
+}
