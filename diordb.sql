@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 03, 2022 at 02:38 PM
--- Server version: 10.4.17-MariaDB
--- PHP Version: 8.0.2
+-- Generation Time: Apr 03, 2022 at 08:55 PM
+-- Server version: 10.4.22-MariaDB
+-- PHP Version: 8.1.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -158,7 +158,10 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`masanpham`, `tensanpham`, `giaban`, `giagiam`, `mota`, `subtittle`, `hinhanh`, `soluongton`, `trangthai`, `maloaihang`, `created_at`, `updated_at`) VALUES
-(1, 'Product has Image', 123456, 123, 'asdasdasdasdasdasdasdasdasdas', NULL, '/resources/images/cat-5.jpg', 50, 1, 1, '2022-04-03 05:29:16', '2022-04-03 05:29:16');
+(1, 'Product has Image', 123456, 123, 'asdasdasdasdasdasdasdasdasdas', NULL, '/resources/images/cat-5.jpg', 50, 1, 1, '2022-04-03 05:29:16', '2022-04-03 05:29:16'),
+(2, '3213123', 12, 12, '1111111111111', NULL, '/resources/images/download.jpg', 122, 1, 1, '2022-04-03 08:35:40', '2022-04-03 11:46:35'),
+(3, 'FDSF', 3213, 23312, '1', NULL, '/resources/images/download.jpg', 1, 1, 2, '2022-04-03 11:49:35', '2022-04-03 11:49:35'),
+(4, '1231', 3213, 3213, '321', NULL, '/resources/images/3213123.jpg', 321, 1, 1, '2022-04-03 11:50:05', '2022-04-03 11:50:05');
 
 -- --------------------------------------------------------
 
@@ -303,7 +306,7 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `masanpham` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `masanpham` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `typeproducts`
