@@ -1,4 +1,4 @@
-@extends("layout")
+@extends("layouts.admin")
 
 @section('tittle', 'Update Product')
 
@@ -69,7 +69,7 @@
 
             <div>
                 <label class="control-label col-md-2">Hình Ảnh Cũ</label>
-                <img src="{{ asset('..'.$list->hinhanh) }}" style="height: 70px; width: 70px;">
+                <img src="{{ asset($list->hinhanh) }}" style="height: 70px; width: 70px;">
             </div><br>
 
             <div class="form-group">

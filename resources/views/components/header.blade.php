@@ -63,7 +63,7 @@
                         </button>
                     </li>
                     <li class="header-icon m-0">
-                        <button aria-haspopup="true" aria-live="polite" aria-atomic="true" tabindex="1" data-end-to-end="auto_header_cart" id="cart-button">
+                        <button href="{{ route('cart.index') }}" aria-haspopup="true" aria-live="polite" aria-atomic="true" tabindex="1" data-end-to-end="auto_header_cart" id="cart-button">
                             <div class="sr-only">Your shopping cart currently contains 0 items</div>
                             <span class="icon">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">

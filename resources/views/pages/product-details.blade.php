@@ -20,7 +20,7 @@
                         <li class="product-medias-grid-image">
                             <button class="product-media">
                                 <div class="image product-media__image">
-                                    <img src="https://wwws.dior.com/couture/ecommerce/media/catalog/product/cache/1/cover_image_1/870x580/17f82f742ffe127f42dca9de82fb58b1/z/I/1645805259_221B92A3683_X4874_E01_ZHC.jpg?imwidth=870">
+                                    <img src="{{ asset($product->hinhanh) }}">
                                 </div>
                             </button>
                         </li>
@@ -70,21 +70,21 @@
                                 <div class="tag">#New</div>
                             </div>
                             <h1>
-                                <span class="multiline-text product-titles">Short-Sleeved Blouse</span>
-                                <span class="multiline-text product-titles-subtitle">Pink Cotton Poplin with Multicolor D-Tiger Pop Motif</span>
+                                <span class="multiline-text product-titles">{{ $product->tensanpham }}</span>
+                                <span class="multiline-text product-titles-subtitle">{{ $product->subtittle }}</span>
                             </h1>
-                            <div class="code">Reference: 221B92A3683_X4874</div>
+                            <div class="code">Reference: {{ $product->masanpham }}</div>
                         </div>
                         <div class="product-actions">
                             <div class="product-actions__price">
-                                <span class="price-line">40.180.000 ₫</span>
+                                <span class="price-line">${{ number_format($product->giaban) }}</span>
                             </div>
                             <div class="product-actions__button">
-                                <span class="button">
+                                <a class="button" href="{{ route('cart.add',['id' => $product->masanpham] ) }}">
                                     <span class="button-content">
                                         <span class="button__title">Add to cart</span>
                                     </span>
-                                </span>
+                                </a>
                             </div>
                         </div>
                         <div class="services-block">

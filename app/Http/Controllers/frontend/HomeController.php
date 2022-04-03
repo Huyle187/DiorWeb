@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 class HomeController extends Controller
 {
     public function home(){
-        return view("pages.home");
+        $list_cart = \Cart::getContent();
+        return view("pages.home",compact('list_cart'));
     }
 }

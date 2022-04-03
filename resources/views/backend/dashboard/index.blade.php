@@ -279,7 +279,7 @@
                         @foreach ($list as $row)
                             <tr>
                                 <td>
-                                    <img src="{{ asset('..'.$row->hinhanh) }}" style="height: 70px; width: 70px;">
+                                    <img src="{{ asset($row->hinhanh) }}" style="height: 70px; width: 70px;">
                                 </td>
                                 <td>
                                     {{$row->tensanpham}}
@@ -288,7 +288,7 @@
                                     {{$row->product_type->tenloaihang}}
                                 </td>
                                 <td>
-                                    {{ number_format($row->giaban,0,'','.') }} VNĐ
+                                    $ {{ number_format($row->giaban,0,'','.') }} 
                                 </td>
                                 <td>
                                     {{$row->created_at}}

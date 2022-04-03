@@ -157,8 +157,10 @@ class ProductController extends Controller
         $image_full_name = $query->getClientOriginalName();
         $upload_path = '/resources/images/';    //Creating Sub directory in Public folder to put image
         $image_url = $upload_path.$image_full_name;
-        $query->move('../resources/images/',$image_full_name);
- 
+        $query->move(resource_path('images'),$image_full_name);
+
         return $image_url; // Just return image
     }
 }
+
+

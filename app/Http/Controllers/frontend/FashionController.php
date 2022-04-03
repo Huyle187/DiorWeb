@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 class FashionController extends Controller
 {
     public function fashion(){
-        return view("pages.fashion");
+        $list_cart = \Cart::getContent();
+        return view("pages.fashion",compact('list_cart'));
     }
 }

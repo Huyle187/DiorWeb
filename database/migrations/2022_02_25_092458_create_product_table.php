@@ -16,9 +16,10 @@ return new class extends Migration
         Schema::create('products', function (Blueprint $table) {
             $table->increments('masanpham');
             $table->string('tensanpham')->nullable();
-            $table->float('giaban')->nullable();
-            $table->float('giagiam')->nullable();
+            $table->bigInteger('giaban')->nullable();
+            $table->bigInteger('giagiam')->nullable();
             $table->longText('mota')->nullable();
+            $table->string('subtittle', 200)->nullable();
             $table->string('hinhanh', 200)->nullable();
             $table->integer('soluongton')->nullable();
             $table->tinyInteger('trangthai')->nullable();
