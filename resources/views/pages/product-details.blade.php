@@ -5,6 +5,8 @@
 @section("styles")
     <link rel="stylesheet" type="text/css" href="{{ ('public/frontend/css/home.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ ('public/frontend/css/product-details.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ ('public/frontend/css/service-messaging.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ ('public/frontend/css/footer-explore-more.css') }}">
 @stop
 
 @section("responsive")
@@ -328,9 +330,13 @@
             </div>
         </div>
     </section>
+
+    @include("components.service-messaging")
+    @include("components.footer-explore-more")
 @stop
 
 @section('scripts')
     <script src="{{ ('public/frontend/js/home.js') }}" crossorigin="anonymous"></script>
     <script src="{{ ('public/frontend/js/product-details.js') }}" crossorigin="anonymous"></script>
+    <script src="{{ ('public/frontend/js/service-messaging.js') }}" crossorigin="anonymous"></script>
 @stop
