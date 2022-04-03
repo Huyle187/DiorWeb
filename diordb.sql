@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 01, 2022 at 10:02 AM
+-- Generation Time: Apr 03, 2022 at 02:38 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.2
 
@@ -20,27 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `diordb`
 --
-
--- --------------------------------------------------------
-
---
--- Table structure for table `collection`
---
-
-CREATE TABLE `collection` (
-  `id` int(11) NOT NULL,
-  `image` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `title` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `type` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `collection`
---
-
-INSERT INTO `collection` (`id`, `image`, `title`, `type`) VALUES
-(1, '', 'SPRING-SUMMER 2022 COLLECTION', 'Women\'s fashion'),
-(2, '', 'SPRING-SUMMER 2022 COLLECTION', 'Women\'s fashion');
 
 -- --------------------------------------------------------
 
@@ -162,9 +141,10 @@ CREATE TABLE `personal_access_tokens` (
 CREATE TABLE `products` (
   `masanpham` int(10) UNSIGNED NOT NULL,
   `tensanpham` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `giaban` double(8,2) DEFAULT NULL,
-  `giagiam` double(8,2) DEFAULT NULL,
+  `giaban` bigint(20) DEFAULT NULL,
+  `giagiam` bigint(20) DEFAULT NULL,
   `mota` longtext COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `subtittle` varchar(200) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `hinhanh` varchar(200) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `soluongton` int(11) DEFAULT NULL,
   `trangthai` tinyint(4) DEFAULT NULL,
@@ -177,9 +157,8 @@ CREATE TABLE `products` (
 -- Dumping data for table `products`
 --
 
-INSERT INTO `products` (`masanpham`, `tensanpham`, `giaban`, `giagiam`, `mota`, `hinhanh`, `soluongton`, `trangthai`, `maloaihang`, `created_at`, `updated_at`) VALUES
-(1, 'Dior Bobby East-West Bag', 9898.00, 6565.00, 'asdasdasdas', '/resources/images/cat-1.jpg', 123123, 1, 1, '2022-03-31 20:11:01', '2022-03-31 23:46:19'),
-(2, 'Product has Image', 123456.00, 12312.00, 'asdasdasd', '/resources/images/1.png', 123, 1, 2, '2022-03-31 23:42:20', '2022-04-01 00:30:36');
+INSERT INTO `products` (`masanpham`, `tensanpham`, `giaban`, `giagiam`, `mota`, `subtittle`, `hinhanh`, `soluongton`, `trangthai`, `maloaihang`, `created_at`, `updated_at`) VALUES
+(1, 'Product has Image', 123456, 123, 'asdasdasdasdasdasdasdasdasdas', NULL, '/resources/images/cat-5.jpg', 50, 1, 1, '2022-04-03 05:29:16', '2022-04-03 05:29:16');
 
 -- --------------------------------------------------------
 
@@ -199,8 +178,8 @@ CREATE TABLE `typeproducts` (
 --
 
 INSERT INTO `typeproducts` (`id`, `tenloaihang`, `created_at`, `updated_at`) VALUES
-(1, 'Men\'s Fashion', '2022-03-31 17:00:00', '2022-03-31 17:00:00'),
-(2, 'Women\'s Fashion', '2022-04-01 03:07:10', '2022-04-01 03:07:10');
+(1, 'Men\' Fashion', '2022-04-03 12:28:27', '2022-04-03 12:28:27'),
+(2, 'Women\' Fashion', '2022-04-03 12:28:27', '2022-04-03 12:28:27');
 
 -- --------------------------------------------------------
 
@@ -226,17 +205,11 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `enable`, `access_level`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Huy', 'huy@gmail.com', NULL, '$2y$10$/MQP/12sdRc5Pk/RO3r8v.OAb25BFHHU5uCWI7.EyY5DiMQGLiMsW', 1, 1, NULL, NULL, NULL);
+(1, 'Huy', 'huy@gmail.com', NULL, '$2y$10$F4dMdzOJAmhjtfm9vMFU/OGkqdl0stlsGDxsoTVgOq9zjM79hCrcq', 1, 1, NULL, NULL, NULL);
 
 --
 -- Indexes for dumped tables
 --
-
---
--- Indexes for table `collection`
---
-ALTER TABLE `collection`
-  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `customers`
@@ -303,12 +276,6 @@ ALTER TABLE `users`
 --
 
 --
--- AUTO_INCREMENT for table `collection`
---
-ALTER TABLE `collection`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
 -- AUTO_INCREMENT for table `customers`
 --
 ALTER TABLE `customers`
@@ -336,7 +303,7 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `masanpham` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `masanpham` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `typeproducts`
