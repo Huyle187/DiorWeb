@@ -39,6 +39,9 @@
                 .product-image {
                     img {
                         width: 100%;
+                        height: 432.92px;
+                        -o-object-fit: cover;
+                           object-fit: cover;
                     }
                 }
             }

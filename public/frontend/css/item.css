@@ -35,6 +35,9 @@
 }
 .grid-view-content .grid-view-element .product-wrapper .product-image img {
   width: 100%;
+  height: 432.92px;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 .grid-view-content .grid-view-element .product .popin-openers {
   display: flex;
