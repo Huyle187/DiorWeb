@@ -13,15 +13,9 @@
                 <span class="multiline-text">Spring-Summer 2022 Collection</span>
             </span>
             <div class="static-button">
-                <span class="button background-color-black color-white">
+                <span class="button">
                     <span class="button-content">
-                        <span aria-hidden="true" class="icon css-2sia23" color="white" height="20" width="20">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4.9 6.95L4 17.5h12l-.9-10.55H4.9z" fill="currentColor"></path>
-                                <path d="M16.63 17.47l-.6-11a.51.51 0 00-.5-.47h-2v-.43a3.5 3.5 0 00-7 0V6h-2a.51.51 0 00-.5.47l-.62 11a.49.49 0 00.49.53h12.3a.49.49 0 00.43-.53zm-12.31-.42L4.9 7h10.2l.56 10.1-11.34-.05zM7.5 5.57a2.5 2.5 0 115 0V6h-5v-.43z" fill="currentColor"></path>
-                            </svg>
-                        </span>
-                        <span class="button__title">SHOP</span>
+                        <span class="button__title">DISCOVER</span>
                     </span>
                 </span>
             </div>

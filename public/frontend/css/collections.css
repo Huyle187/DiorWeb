@@ -37,6 +37,7 @@
 }
 .collections__image-infos .collections-image-link .static-button .button {
   width: 100%;
+  border: 1px solid black;
 }
 
 .collections + .collections {

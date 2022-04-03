@@ -5,6 +5,7 @@ use App\Http\Controllers\frontend\HomeController;
 use App\Http\Controllers\frontend\BeautyController;
 use App\Http\Controllers\frontend\FashionController;
 use App\Http\Controllers\frontend\CollectionController;
+use App\Http\Controllers\frontend\ProductDetailsController;
 
 use App\Http\Controllers\backend\DashboardController;
 use App\Http\Controllers\backend\ProductController;
@@ -29,6 +30,8 @@ Route::get('/beauty', [BeautyController::class, 'beauty']);
 Route::get('/fashion', [FashionController::class, 'fashion']);
 
 Route::get('/women-fashion-spring-summer-2022-collection', [CollectionController::class, 'collection']);
+
+Route::get('/product-details', [ProductDetailsController::class, 'productDetails']);
 
 
 //Admin Page

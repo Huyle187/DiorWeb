@@ -1,7 +1,7 @@
 @foreach ($list as $row)
     <li class="grid-view-element">
         <div class="product">
-                <a href="product/dior-bobby-east-west-bag" class="product-wrapper">
+                <a href="product-details" class="product-wrapper">
                     <div class="product-image">
                         <img src="{{asset($row->hinhanh) }}" alt="{{$row->tensanpham}}">
                     </div>

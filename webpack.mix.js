@@ -22,4 +22,5 @@ mix.sass("resources/scss/header.scss", "public/frontend/css")
     .sass("resources/scss/service-messaging.scss", "public/frontend/css")
     .sass("resources/scss/item.scss", "public/frontend/css")
     .sass("resources/scss/footer-explore-more.scss", "public/frontend/css")
+    .sass("resources/scss/product-details.scss", "public/frontend/css")
     .sass("resources/scss/login.scss", "public/backend/css");
