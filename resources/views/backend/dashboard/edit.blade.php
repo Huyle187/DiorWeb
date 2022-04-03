@@ -5,7 +5,7 @@
 @section('mainContent')
     <br />
     <h2 class="col-md-6 text-danger">
-        <b>CẬP NHẬT SẢN PHẨM</b>
+        <b>UPDATE PRODUCT</b>
     </h2>
 
     <form action=" {{ route('product.update' , ['id' => $list->masanpham]) }} " method="POST" enctype="multipart/form-data">

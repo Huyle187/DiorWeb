@@ -5,7 +5,7 @@
 @section('mainContent')
     <br />
     <h2 class="col-md-6 text-danger">
-        <b>THÊM MỚI SẢN PHẨM</b>
+        <b>ADD NEW PRODUCTS</b>
     </h2>
     {{-- @if ( Session::has('success') )
         <div class="alert alert-success alert-dismissible" role="alert">
@@ -27,12 +27,12 @@
             </button>
         </div>
     @endif --}}
-    
+
     <form action=" {{route('product.store')}} " method="POST" enctype="multipart/form-data">
         @csrf
         <div class="form-horizontal">
             <hr />
-    
+
             <div class="form-group">
                 <label class="control-label col-md-2" for="">Tên Sản Phẩm</label>
                 <div class="col-md-10">
@@ -42,7 +42,7 @@
                     <span class="text-danger col-md-10"> {{ $errors->first('tensanpham') }} </span>
                 @endif
             </div>
-    
+
             <div class="form-group">
                 <label class="control-label col-md-2">Loại Hàng</label>
                 <div class="col-md-10">
@@ -57,7 +57,7 @@
                     <span class="text-danger col-md-10">{{ $errors->first('maloaihang') }}</span>
                 @endif
             </div>
-    
+
             <div class="form-group">
                 <label class="control-label col-md-2">Giá Bán</label>
                 <div class="col-md-10">
@@ -82,7 +82,7 @@
                     <span class="text-danger col-md-10">{{ $errors->first('giagiam') }}</span>
                 @endif
             </div>
-    
+
             <div class="form-group">
                 <label class="control-label col-md-2">Hình Ảnh</label>
                 <div class="col-md-10">
@@ -92,7 +92,7 @@
                     <span class="text-danger col-md-10">{{ $errors->first('hinhanh') }}</span>
                 @endif
             </div>
-    
+
             <div class="form-group">
                 <label class="control-label col-md-2">Số Lượng Tồn</label>
                 <div class="col-md-10">
@@ -102,7 +102,7 @@
                     <span class="text-danger col-md-10">{{ $errors->first('soluongton') }}</span>
                 @endif
             </div>
-    
+
             <div class="form-group">
                 <label class="control-label col-md-2">Mô tả chi tiết</label>
                 <div class="col-md-10">
@@ -112,7 +112,7 @@
                     <span class="text-danger col-md-10">{{ $errors->first('mota') }}</span>
                 @endif
             </div>
-    
+
             <div class="form-group">
                 <div class="col-md-10">
                     <a class="btn btn-sm btn-info" href="{{ route('dashboard') }}">

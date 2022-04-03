@@ -117,3 +117,12 @@
 .collection__page-content .merchandisingFilters .filters-bar-expanded__content__right .selectCell .icon {
   padding-left: 0.4rem;
 }
+.collection__page-content .empty {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+.collection__page-content .empty span {
+  font-weight: 700;
+}

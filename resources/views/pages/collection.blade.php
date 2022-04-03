@@ -81,9 +81,9 @@
                         <div class="filters-bar-expanded__content__right">
                             <div class="filters-bar-expanded__content__right__products-count">
                                 @if ($list->total() < 10)
-                                    0{{ $list->total() }} 
+                                    0{{ $list->total() }}
                                 @else
-                                    {{ $list->total() }} 
+                                    {{ $list->total() }}
                                 @endif
                                 Articles
                             </div>
@@ -104,10 +104,12 @@
                 </div>
             </div>
 
-            <ul class="grid-view-content">
-                @if ($list->count() == 0)
-                    Sorry – there are no results for your search "{{ $search }}". Please try again or consult our bestsellers:               
+            @if ($list->count() == 0)
+                    <div class="empty">
+                        Sorry – there are no results for your search <span>"{{ $search }}"</span>. Please try again
+                    </div>
                 @else
+            <ul class="grid-view-content">
                     @include("components.item")
                 @endif
             </ul>

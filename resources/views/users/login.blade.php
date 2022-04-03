@@ -42,11 +42,10 @@
                     <div class="card-body p-0">
                         <!-- Nested Row within Card Body -->
                         <div class="row">
-                            <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
-                            <div class="col-lg-6">
+                            <div class="col-lg-12">
                                 <div class="p-5">
                                     <div class="text-center">
-                                        <h1 class="h4 text-gray-900 mb-4">Login</h1>
+                                        <h1 class="h1 text-gray-900 mb-4">Login</h1>
                                     </div>
                                     @if (session('error'))
                                         <div class="text-danger" >
@@ -61,7 +60,7 @@
                                         <div class="form-group">
                                             <input type="email" name="email" class="form-control form-control-user"
                                                 id="exampleInputEmail" aria-describedby="emailHelp"
-                                                placeholder="Enter Email Address...">
+                                                placeholder="*Email Address">
                                                 @if (session('emailerror'))
                                                     <div class="text-danger" >
                                                         {{ session('emailerror') }}
@@ -71,7 +70,7 @@
                                         </div>
                                         <div class="form-group">
                                             <input type="password" name="password" class="form-control form-control-user"
-                                                id="exampleInputPassword" placeholder="Password">
+                                                id="exampleInputPassword" placeholder="*Password">
                                             @if (session('passerror'))
                                                 <div class="text-danger" >
                                                     {{ session('passerror') }}

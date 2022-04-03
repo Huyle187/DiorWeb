@@ -139,5 +139,16 @@
                 }
             }
         }
+
+        .empty {
+            font-size: 1.4rem;
+            line-height: 2.4rem;
+            text-align: center;
+            margin-top: 3rem;
+
+            span {
+                font-weight: 700;
+            }
+        }
     }
 }
