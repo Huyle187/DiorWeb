@@ -1,6 +1,6 @@
 @extends("layout")
 
-@section('title', "Spring-Summer 2022 Collection - Women's Fashion | DIOR")
+@section('title', " | DIOR")
 
 @section("styles")
     <link rel="stylesheet" type="text/css" href="{{ ('public/frontend/css/service-messaging.css') }}">
@@ -17,7 +17,8 @@
     <section class="collection">
         <div class="collection__page-content">
             <h1 class="title-with-level page-title text-uppercase">
-                <div class="multiline-text"> Spring-Summer 2022 Collection </div>
+                <div class="multiline-text"> Spring-Summer 2022 Collection
+                </div>
             </h1>
             <div class="page-cover">
                 <div class="page-cover-wrapper">
@@ -69,7 +70,7 @@
                                                     </span>
                                                 </div>
                                                 <span class="selectCell__cell__title">
-                                                    Available Online
+                                                    Available Online 
                                                 </span>
                                             </div>
                                         </div>

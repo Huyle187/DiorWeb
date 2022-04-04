@@ -34,9 +34,9 @@
             <hr />
 
             <div class="form-group">
-                <label class="control-label col-md-2" for="">Tên Sản Phẩm</label>
+                <label class="control-label col-md-2" for="">Product Name</label>
                 <div class="col-md-10">
-                    <input type="text" class="form-control" name="tensanpham" value="{{ old('tensanpham') }}" id="tensanpham" placeholder="Nhập tên sản phẩm" >
+                    <input type="text" class="form-control" name="tensanpham" value="{{ old('tensanpham') }}" id="tensanpham" placeholder="Enter Name of Product" >
                 </div>
                 @if ($errors->has('tensanpham'))
                     <span class="text-danger col-md-10"> {{ $errors->first('tensanpham') }} </span>
@@ -44,10 +44,20 @@
             </div>
 
             <div class="form-group">
-                <label class="control-label col-md-2">Loại Hàng</label>
+                <label class="control-label col-md-2" for="">Sub Title</label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" name="subtitle" value="{{ old('subtitle') }}" id="subtitle" placeholder="Enter Sub Title" >
+                </div>
+                @if ($errors->has('subtitle'))
+                    <span class="text-danger col-md-10"> {{ $errors->first('subtitle') }} </span>
+                @endif
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-md-2">Type</label>
                 <div class="col-md-10">
                     <select name="maloaihang" id="maloaihang" class="form-control">
-                        <option value="">[Chọn Loại Hàng]</option>
+                        <option value="">[Chosse Type]</option>
                         @foreach ($productType as $row)
                             <option value="{{ $row->id }}">{{ $row->tenloaihang }}</option>
                         @endforeach
@@ -59,9 +69,24 @@
             </div>
 
             <div class="form-group">
-                <label class="control-label col-md-2">Giá Bán</label>
+                <label class="control-label col-md-2">Collection</label>
                 <div class="col-md-10">
-                    <input type="number" class="form-control" name="giaban" value="{{ old('giaban') }}" id="giaban" placeholder="Nhập giá sản phẩm" >
+                    <select name="collectionID" id="collectionID" class="form-control">
+                        <option value="">[Chosse Collection]</option>
+                        @foreach ($collection as $collect)
+                            <option value="{{ $collect->id }}">{{ $collect->nameCol }}</option>
+                        @endforeach
+                    </select>
+                </div>
+                @if ($errors->has('collectionID'))
+                    <span class="text-danger col-md-10">{{ $errors->first('collectionID') }}</span>
+                @endif
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-md-2">Price</label>
+                <div class="col-md-10">
+                    <input type="number" class="form-control" name="giaban" value="{{ old('giaban') }}" id="giaban" placeholder="Enter Price" >
                 </div>
                 @if ($errors->has('giaban'))
                     <span class="text-danger col-md-10">{{ $errors->first('giaban') }}</span>
@@ -74,9 +99,9 @@
             </div>
 
             <div class="form-group">
-                <label class="control-label col-md-2">Giá Khuyến Mãi</label>
+                <label class="control-label col-md-2">Price Sale</label>
                 <div class="col-md-10">
-                    <input type="number" class="form-control" name="giagiam" value="{{ old('giagiam') }}" id="giagiam" placeholder="Nhập giá khuyến mãi" >
+                    <input type="number" class="form-control" name="giagiam" value="{{ old('giagiam') }}" id="giagiam" placeholder="Enter Price Sales" >
                 </div>
                 @if ($errors->has('giagiam'))
                     <span class="text-danger col-md-10">{{ $errors->first('giagiam') }}</span>
@@ -84,9 +109,9 @@
             </div>
 
             <div class="form-group">
-                <label class="control-label col-md-2">Hình Ảnh</label>
+                <label class="control-label col-md-2">Image</label>
                 <div class="col-md-10">
-                    <input type="file" name="hinhanh" id="hinhanh" placeholder="Chọn Hình Ảnh" >
+                    <input type="file" name="hinhanh" id="hinhanh" placeholder="" >
                 </div>
                 @if ($errors->has('hinhanh'))
                     <span class="text-danger col-md-10">{{ $errors->first('hinhanh') }}</span>
@@ -94,9 +119,9 @@
             </div>
 
             <div class="form-group">
-                <label class="control-label col-md-2">Số Lượng Tồn</label>
+                <label class="control-label col-md-2">Quantity</label>
                 <div class="col-md-10">
-                    <input type="number" class="form-control" name="soluongton" value="{{ old('soluongton') }}" id="soluongton" placeholder="Nhập số lượng tồn" >
+                    <input type="number" class="form-control" name="soluongton" value="{{ old('soluongton') }}" id="soluongton" placeholder="Enter quantity" >
                 </div>
                 @if ($errors->has('soluongton'))
                     <span class="text-danger col-md-10">{{ $errors->first('soluongton') }}</span>
@@ -104,15 +129,15 @@
             </div>
 
             <div class="form-group">
-                <label class="control-label col-md-2">Mô tả chi tiết</label>
+                <label class="control-label col-md-2">Description</label>
                 <div class="col-md-10">
-                    <textarea name="mota" id="mota" rows="4" class="form-control" placeholder="Mô tả chi tiết">{{ old('mota') }}</textarea>
+                    <textarea name="mota" id="mota" rows="4" class="form-control" placeholder="Enter Description">{{ old('mota') }}</textarea>
                 </div>
                 @if ($errors->has('mota'))
                     <span class="text-danger col-md-10">{{ $errors->first('mota') }}</span>
                 @endif
             </div>
-
+            <br>
             <div class="form-group">
                 <div class="col-md-10">
                     <a class="btn btn-sm btn-info" href="{{ route('dashboard') }}">

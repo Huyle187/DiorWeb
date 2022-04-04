@@ -35,55 +35,65 @@
                 <thead class="btn-info">
                     <tr>
                         <th>
-                            Hình Ảnh
+                            Image
                         </th>
                         <th>
-                            Tên Hàng
+                            Product Name
                         </th>
                         <th>
-                            Tên Loại Hàng
+                            Type
                         </th>
                         <th>
-                            Giá Bán
+                            Sub Title
                         </th>
                         <th>
-                            Ngày Tạo
+                            Price
                         </th>
                         <th>
-                            Ngày Cập Nhật
+                            Created at
                         </th>
                         <th>
-                            Số Lượng Tồn
+                            Updated at
+                        </th>
+                        <th>
+                            Quantity
                         </th>
                         <th></th>
                     </tr>
                 </thead>
 
                 <tbody>
-                    @foreach ($list as $row)
-
+                    @if ($list->count() == 0)
                         <tr>
-                            <td>
-                                <img src="{{ asset($row->hinhanh) }}" style="height: 70px; width: 70px;">
-                            </td>
-                            <td>
-                                {{$row->tensanpham}}
-                            </td>
-                            <td>
-                                {{$row->product_type->tenloaihang}}
-                            </td>
-                            <td>
-                                {{ number_format($row->giaban,0,'','.') }} VNĐ
-                            </td>
-                            <td>
-                                {{$row->created_at}}
-                            </td>
-                            <td>
-                                {{$row->updated_at}}
-                            </td>
-                            <td>
-                                {{$row->soluongton}}
-                            </td>
+                            <td colspan='8'>Don't have Product to show on Page!</td>
+                        </tr>
+                    @else
+                        @foreach ($list as $row)
+                            <tr>
+                                <td>
+                                    <img src="{{ asset('/resources/images/'.$row->hinhanh) }}" style="height: 70px; width: 70px;">
+                                </td>
+                                <td>
+                                    {{$row->tensanpham}}
+                                </td>
+                                <td>
+                                    {{$row->product_type->tenloaihang}}
+                                </td>
+                                <td>
+                                    {{$row->subtitle}}
+                                </td>
+                                <td>
+                                    $ {{ number_format($row->giaban,0,'','.') }}
+                                </td>
+                                <td>
+                                    {{$row->created_at}}
+                                </td>
+                                <td>
+                                    {{$row->updated_at}}
+                                </td>
+                                <td>
+                                    {{$row->soluongton}}
+                                </td>
 
                             <td style="align: center">
                                 <a class="btn btn-sm btn-info" href="{{ route('product.retrash', ['id' => $row->masanpham]) }}">
@@ -95,7 +105,8 @@
                             </td>
                         </tr>
 
-                    @endforeach
+                        @endforeach
+                    @endif
                 </tbody>
             </table>
         </div>

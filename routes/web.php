@@ -29,8 +29,13 @@ Route::get('/', [HomeController::class, 'home'])->name('home');
 Route::get('/beauty', [BeautyController::class, 'beauty']);
 
 Route::get('/fashion', [FashionController::class, 'fashion']);
+Route::get('/women-collection-{type}', [FashionController::class, 'women'])->name('collection.women');
+Route::get('/men-collection-{type}', [FashionController::class, 'men'])->name('collection.men');
+Route::get('/kid-collection-{type}', [FashionController::class, 'kid'])->name('collection.kid');
 
-Route::get('/women-fashion-spring-summer-2022-collection', [CollectionController::class, 'collection'])->name('collection.women');
+
+//Fashion->Collection
+Route::get('/collection-{colID}-type-{type}', [CollectionController::class, 'collection'])->name('collection.index');
 
 Route::get('/product-details-{id}', [ProductDetailsController::class, 'productDetails'])->name('product.details');
 

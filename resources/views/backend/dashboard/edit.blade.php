@@ -14,9 +14,9 @@
             <hr />
 
             <div class="form-group">
-                <label class="control-label col-md-2" for="">Tên Sản Phẩm</label>
+                <label class="control-label col-md-2" for="">Product Name</label>
                 <div class="col-md-10">
-                    <input type="text" class="form-control" name="tensanpham" value="{{ old('tensanpham',$list->tensanpham) }}" id="tensanpham" placeholder="Nhập tên sản phẩm" >
+                    <input type="text" class="form-control" name="tensanpham" value="{{ old('tensanpham',$list->tensanpham) }}" id="tensanpham" placeholder="Enter Name of Product" >
                 </div>
                 @if ($errors->has('tensanpham'))
                     <span class="text-danger col-md-10"> {{ $errors->first('tensanpham') }} </span>
@@ -24,10 +24,21 @@
             </div>
 
             <div class="form-group">
-                <label class="control-label col-md-2">Loại Hàng</label>
+                <label class="control-label col-md-2" for="">Sub Title</label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" name="subtitle" value="{{ old('subtitle',$list->subtitle) }}" id="subtitle" placeholder="Enter Sub Title" >
+                </div>
+                @if ($errors->has('subtitle'))
+                    <span class="text-danger col-md-10"> {{ $errors->first('subtitle') }} </span>
+                @endif
+            </div>
+
+
+            <div class="form-group">
+                <label class="control-label col-md-2">Type</label>
                 <div class="col-md-10">
                     <select name="maloaihang" id="maloaihang" class="form-control">
-                        <option value="">[Chọn Loại Hàng]</option>
+                        <option value="">[Chosse Type]</option>
                         @foreach ($productType as $row)
                             @if ($row->id == $list->maloaihang)
                                 <option selected value="{{ $row->id }}">{{ $row->tenloaihang }}</option>
@@ -43,9 +54,28 @@
             </div>
 
             <div class="form-group">
-                <label class="control-label col-md-2">Giá Bán</label>
+                <label class="control-label col-md-2">Collection</label>
                 <div class="col-md-10">
-                    <input type="number" class="form-control" name="giaban" value="{{ old('giaban',$list->giaban) }}" id="giaban" placeholder="Nhập giá sản phẩm" >
+                    <select name="collectionID" id="collectionID" class="form-control">
+                        <option value="">[Chosse Collection]</option>
+                        @foreach ($collection as $collect)
+                            @if ($collect->id == $list->collectionID)
+                                <option selected value="{{ $collect->id }}">{{ $collect->nameCol }}</option>
+                            @else
+                                <option value="{{ $collect->id }}">{{ $collect->nameCol }}</option>
+                            @endif
+                        @endforeach
+                    </select>
+                </div>
+                @if ($errors->has('collectionID'))
+                    <span class="text-danger col-md-10">{{ $errors->first('collectionID') }}</span>
+                @endif
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-md-2">Price</label>
+                <div class="col-md-10">
+                    <input type="number" class="form-control" name="giaban" value="{{ old('giaban',$list->giaban) }}" id="giaban" placeholder="Enter Price" >
                 </div>
                 @if ($errors->has('giaban'))
                     <span class="text-danger col-md-10">{{ $errors->first('giaban') }}</span>
@@ -58,7 +88,7 @@
             </div>
 
             <div class="form-group">
-                <label class="control-label col-md-2">Giá Khuyến Mãi</label>
+                <label class="control-label col-md-2">Price Sale</label>
                 <div class="col-md-10">
                     <input type="number" class="form-control" name="giagiam" value="{{ old('giagiam',$list->giagiam) }}" id="giagiam" placeholder="Nhập giá khuyến mãi" >
                 </div>
@@ -68,14 +98,14 @@
             </div>
 
             <div>
-                <label class="control-label col-md-2">Hình Ảnh Cũ</label>
-                <img src="{{ asset($list->hinhanh) }}" style="height: 70px; width: 70px;">
+                <label class="control-label col-md-2">Old Image</label>
+                <img src="{{ asset('/resources/images/'.$list->hinhanh) }}" style="height: 70px; width: 70px;">
             </div><br>
 
             <div class="form-group">
-                <label class="control-label col-md-5">Cập Nhật Ảnh Mới (Không bắt buộc)</label>
+                <label class="control-label col-md-5">Update Image <sup class="text-danger">*Not Require</sup></label>
                 <div class="col-md-10">
-                    <input type="file" name="hinhanh" id="hinhanh" placeholder="Chọn Hình Ảnh" >
+                    <input type="file" name="hinhanh" id="hinhanh" placeholder="" >
                 </div>
                 @if (session('error'))
                 <div class="col-md-10 text-danger">
@@ -86,9 +116,9 @@
 
 
             <div class="form-group">
-                <label class="control-label col-md-2">Số Lượng Tồn</label>
+                <label class="control-label col-md-2">Quantity</label>
                 <div class="col-md-10">
-                    <input type="number" class="form-control" name="soluongton" value="{{ old('soluongton',$list->soluongton) }}" id="soluongton" placeholder="Nhập số lượng tồn" >
+                    <input type="number" class="form-control" name="soluongton" value="{{ old('soluongton',$list->soluongton) }}" id="soluongton" placeholder="Enter quantity" >
                 </div>
                 @if ($errors->has('soluongton'))
                     <span class="text-danger col-md-10">{{ $errors->first('soluongton') }}</span>
@@ -96,9 +126,9 @@
             </div>
 
             <div class="form-group">
-                <label class="control-label col-md-2">Mô tả chi tiết</label>
+                <label class="control-label col-md-2">Description</label>
                 <div class="col-md-10">
-                    <textarea name="mota" id="mota" rows="4" class="form-control" placeholder="Mô tả chi tiết">{{ old('mota',$list->mota) }}</textarea>
+                    <textarea name="mota" id="mota" rows="4" class="form-control" placeholder="Enter Description">{{ old('mota',$list->mota) }}</textarea>
                 </div>
                 @if ($errors->has('mota'))
                     <span class="text-danger col-md-10">{{ $errors->first('mota') }}</span>

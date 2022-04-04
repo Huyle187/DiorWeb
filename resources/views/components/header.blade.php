@@ -79,13 +79,13 @@
 
         <div class="header__menu-placeholder h-0 additionalClassHeaderMenuPlaceholder" id="header__menu-placeholder-1">
             <div class="navigation-tab-second text-uppercase" id="navigation-tab-second-1">
-                <a href="{{ url('/womens-fashion/woman') }}" aria-label="Women's Fashion" target="_self" rel="" tabindex="-1" data-end-to-end="auto_menu_level2_item_69279">Women's Fashion</a>
+                <a href="{{ route('collection.women', ['type'=>2]) }}" aria-label="Women's Fashion" target="_self" rel="" tabindex="-1" data-end-to-end="auto_menu_level2_item_69279">Women's Fashion</a>
             </div>
             <div class="navigation-tab-second text-uppercase" id="navigation-tab-secon-2">
-                <a href="{{ url('/mens-fashion/man') }}" aria-label="Men's Fashion" target="_self" rel="" tabindex="-1" data-end-to-end="auto_menu_level2_item_69538">Men's Fashion</a>
+                <a href="{{ route('collection.men', ['type'=>1]) }}" aria-label="Men's Fashion" target="_self" rel="" tabindex="-1" data-end-to-end="auto_menu_level2_item_69538">Men's Fashion</a>
             </div>
             <div class="navigation-tab-second text-uppercase" id="navigation-tab-second-3">
-                <a href="{{ url('/kids/kids-fashion') }}" aria-label="KIDS &amp; BABY" target="_self" rel="" tabindex="-1" data-end-to-end="auto_menu_level2_item_69628">KIDS &amp; BABY</a>
+                <a href="{{ route('collection.kid', ['type'=>3]) }}" aria-label="KIDS &amp; BABY" target="_self" rel="" tabindex="-1" data-end-to-end="auto_menu_level2_item_69628">KIDS &amp; BABY</a>
             </div>
         </div>
 

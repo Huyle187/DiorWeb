@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Models\ProductType;
+use App\Models\Collection;
 use App\Http\Requests\ProductStoreRequest;
 use App\Http\Requests\ProductUpdateRequest;
 use Illuminate\Support\Str;
@@ -19,7 +20,8 @@ class ProductController extends Controller
     {
         $list = Product::orderby('maloaihang')->get();
         $productType = ProductType::orderby('id')->get();
-        return view('backend.dashboard.create',compact('list','productType'));
+        $collection = Collection::orderby('id')->get();
+        return view('backend.dashboard.create',compact('list','productType','collection'));
     }
 
     /**
@@ -32,8 +34,10 @@ class ProductController extends Controller
         $product->giaban = $request->giaban;
         $product->giagiam = $request->giagiam;
         $product->mota = $request->mota;
+        $product->subtitle = $request->subtitle;
         $product->soluongton = $request->soluongton;
         $product->maloaihang = $request->maloaihang;
+        $product->collectionID = $request->collectionID;
         $product->trangthai = 1;
         $product->hinhanh = $request->hinhanh;
         
@@ -62,7 +66,8 @@ class ProductController extends Controller
     public function Edit($id){
         $list = Product::find($id);
         $productType = ProductType::orderby('id')->get();
-        return view('backend.dashboard.edit',compact('list','productType'));
+        $collection = Collection::orderby('id')->get();
+        return view('backend.dashboard.edit',compact('list','productType','collection'));
     }
 
     public function Update(ProductUpdateRequest $request, $id)
@@ -88,8 +93,10 @@ class ProductController extends Controller
         $product->giaban = $request->giaban;
         $product->giagiam = $request->giagiam;
         $product->mota = $request->mota;
+        $product->subtitle = $request->subtitle;
         $product->soluongton = $request->soluongton;
         $product->maloaihang = $request->maloaihang;
+        $product->collectionID = $request->collectionID;
         $product->trangthai = 1;
 
         $product->save();
@@ -156,7 +163,7 @@ class ProductController extends Controller
         //$ext = strtolower($query->getClientOriginalName()); // You can use also getClientOriginalName()
         $image_full_name = $query->getClientOriginalName();
         $upload_path = '/resources/images/';    //Creating Sub directory in Public folder to put image
-        $image_url = $upload_path.$image_full_name;
+        $image_url = $image_full_name;
         $query->move(resource_path('images'),$image_full_name);
 
         return $image_url; // Just return image

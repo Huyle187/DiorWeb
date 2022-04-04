@@ -48,6 +48,9 @@
                             Type
                         </th>
                         <th>
+                            Sub Title
+                        </th>
+                        <th>
                             Price
                         </th>
                         <th>
@@ -72,13 +75,16 @@
                         @foreach ($list as $row)
                             <tr>
                                 <td>
-                                    <img src="{{ asset($row->hinhanh) }}" style="height: 70px; width: 70px;">
+                                    <img src="{{ asset('/resources/images/'.$row->hinhanh) }}" style="height: 70px; width: 70px;">
                                 </td>
                                 <td>
                                     {{$row->tensanpham}}
                                 </td>
                                 <td>
                                     {{$row->product_type->tenloaihang}}
+                                </td>
+                                <td>
+                                    {{$row->subtitle}}
                                 </td>
                                 <td>
                                     $ {{ number_format($row->giaban,0,'','.') }}

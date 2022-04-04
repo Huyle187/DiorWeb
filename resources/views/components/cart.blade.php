@@ -1,4 +1,5 @@
 <form action="{{ route('cart.update') }}" method="POST" name="form">
+    @csrf
     <div class="account-panel-content__cart hidden cart-table">
         <div class="empty-cart">
                 <table class="table table-bordered table-striped text-center">
@@ -29,7 +30,7 @@
                             <?php $attribute = $row->attributes ?>
                                 <tr>
                                     <td>
-                                        <img src="{{ asset($attribute['img']) }}" style="height: 30px; width: 30px;">
+                                        <img src="{{ asset('/resources/images/'.$attribute['img']) }}" style="height: 30px; width: 30px;">
                                     </td>
 
                                     <td>
@@ -41,7 +42,7 @@
                                     </td>
 
                                     <td>
-                                        <input type="number" value="{{ $row->quantity }}" name="quantity">
+                                        <input type="number" value="{{ $row->quantity }}" name="quantity[]">
                                     </td>
 
                                     <td>
@@ -70,7 +71,7 @@
 
             <button class="button empty-cart-button text-uppercase border-black background-color-white" type="submit">
                 <span class="button-link-content">
-                    <span class="button-link__title">CONTINUE SHOPPING</span>
+                    <span class="button-link__title"><b>UPDATE CART</b></span>
                 </span>
             </button>
         </div>

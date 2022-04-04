@@ -29,7 +29,9 @@ class ProductUpdateRequest extends FormRequest
             'giagiam' => 'required',
             'soluongton' => 'required',
             'mota' => 'required',
+            'subtitle' => 'required',
             'maloaihang' => 'required',
+            'collectionID' => 'required',
             'hinhanh' => 'image|mimes:png,jpg,jpeg,gif|max:2048'
         ];
     }
@@ -42,6 +44,8 @@ class ProductUpdateRequest extends FormRequest
             'soluongton.required' => '* Số lượng không được để trống',
             'maloaihang.required' => '* Loại hàng không được để trống',
             'mota.required' => '* Mô tả không được để trống',
+            'subtitle.required' => '* Không được để trống',
+            'collectionID.required' => '* Vui lòng chọn bộ sưu tập',
         ];
     }
 }

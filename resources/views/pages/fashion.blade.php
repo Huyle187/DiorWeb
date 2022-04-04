@@ -16,10 +16,6 @@
 @section('content')
     <section class="fashion">
         @include("components.collections")
-        @include("components.collections")
-        @include("components.collections")
-        @include("components.collections")
-        @include("components.collections")
     </section>
 
     @include("components.service-messaging")

@@ -27,7 +27,7 @@ class CartController extends Controller
             'attributes' => array('img'=>$product->hinhanh)
         );
         \Cart::add($cartitem);
-        return redirect()->route('collection.women');
+        return redirect()->back();
     }
 
     public function updatecart(Request $request)
@@ -41,7 +41,7 @@ class CartController extends Controller
             ));
             $i++;
         }
-        return redirect()->route('collection.women');
+        return redirect()->back();
     }
 
     public function delcart($id=null)
@@ -50,6 +50,6 @@ class CartController extends Controller
         {
             \Cart::remove($id);
         }
-        return redirect()->route('collection.women');
+        return redirect()->back();
     }
 }

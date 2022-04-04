@@ -22,7 +22,7 @@
                         <li class="product-medias-grid-image">
                             <button class="product-media">
                                 <div class="image product-media__image">
-                                    <img src="{{ asset($product->hinhanh) }}">
+                                    <img src="{{ asset('/resources/images/'.$product->hinhanh) }}">
                                 </div>
                             </button>
                         </li>
@@ -148,8 +148,7 @@
                                 </div>
                                 <div class="product-description-item__content">
                                     <div class="product-description-item__content__block">
-                                        A staple of the Dior silhouette, the blouse is adorned with the D-Tiger Pop print that embodies the collection's colorful pop universe. Crafted in pink cotton poplin, it features a cropped, regular fit with a front button closure. The short-sleeved blouse can be worn with the matching skirt to complete the look.
-
+                                        {{ $product->mota }}
                                         <br>
                                         <br>
 
@@ -178,7 +177,7 @@
                                 </div>
                                 <div class="product-description-item__content">
                                     <div class="product-description-item__content__block">
-                                        A staple of the Dior silhouette, the blouse is adorned with the D-Tiger Pop print that embodies the collection's colorful pop universe. Crafted in pink cotton poplin, it features a cropped, regular fit with a front button closure. The short-sleeved blouse can be worn with the matching skirt to complete the look.
+                                        {{ $product->mota }}
 
                                         <br>
                                         <br>

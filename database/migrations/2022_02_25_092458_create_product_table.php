@@ -23,7 +23,6 @@ return new class extends Migration
             $table->string('hinhanh', 200)->nullable();
             $table->integer('soluongton')->nullable();
             $table->tinyInteger('trangthai')->nullable();
-            // $table->integer('maloaihang')->unsigned();
             $table->foreignID('maloaihang')->references('id')->on('typeproducts');
             $table->timestamps();
         });

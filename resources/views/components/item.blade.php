@@ -1,15 +1,16 @@
+
 @foreach ($list as $row)
     <li class="grid-view-element">
         <div class="product">
                 <a href=" {{ route('product.details' , ['id' => $row->masanpham]) }}" class="product-wrapper">
                     <div class="product-image">
-                        <img src="{{ asset($row->hinhanh) }}" alt="{{$row->tensanpham}}">
+                        <img src="{{ asset('/resources/images/'.$row->hinhanh) }}" alt="{{$row->tensanpham}}">
                     </div>
                     <div class="product-legend">
                         <span class="product-title">
                             <span class="multiline-text">{{$row->tensanpham}}</span>
                         </span>
-                        <p class="product-subtitle">Blue Dior Oblique Jacquard</p>
+                        <p class="product-subtitle">{{ $row->subtitle }}</p>
                         <span class="price-line">
                             $ {{ number_format($row->giaban,0,'',',') }}
                         </span>

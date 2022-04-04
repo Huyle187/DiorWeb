@@ -29,7 +29,9 @@ class ProductStoreRequest extends FormRequest
             'giagiam' => 'required',
             'soluongton' => 'required',
             'mota' => 'required',
+            'subtitle' => 'required',
             'maloaihang' => 'required',
+            'collectionID' => 'required',
             'hinhanh' => 'required|image|mimes:png,jpg,jpeg,gif|max:2048'
         ];
     }
@@ -43,7 +45,9 @@ class ProductStoreRequest extends FormRequest
             'soluongton.required' => '* Số lượng không được để trống',
             'maloaihang.required' => '* Loại hàng không được để trống',
             'mota.required' => '* Mô tả không được để trống',
-            'hinhanh.required' => '* Vui lòng chọn hình ảnh'
+            'subtitle.required' => '* Không được để trống',
+            'hinhanh.required' => '* Vui lòng chọn hình ảnh',
+            'collectionID.required' => '* Vui lòng chọn bộ sưu tập',
         ];
     }
 }
