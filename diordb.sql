@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 03, 2022 at 08:55 PM
--- Server version: 10.4.22-MariaDB
--- PHP Version: 8.1.1
+-- Generation Time: Apr 04, 2022 at 01:55 PM
+-- Server version: 10.4.17-MariaDB
+-- PHP Version: 8.0.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -20,6 +20,32 @@ SET time_zone = "+00:00";
 --
 -- Database: `diordb`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `collections`
+--
+
+CREATE TABLE `collections` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `nameCol` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `hinhanh` varchar(200) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `typeproduct` bigint(20) UNSIGNED NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `collections`
+--
+
+INSERT INTO `collections` (`id`, `nameCol`, `hinhanh`, `typeproduct`, `created_at`, `updated_at`) VALUES
+(1, 'SPRING-SUMMER 2022 COLLECTION', 'https://www.dior.com/couture/var/dior/storage/images/29896073/8-eng-HK/cdc-femme-collection-spring-summer-2218_1440_1200.jpg', 2, '2022-04-04 05:57:19', '2022-04-04 05:57:19'),
+(2, 'B29 SNEAKERS', 'https://www.dior.com/couture/var/dior/storage/images/30482795/6-eng-HK/cdc-homme-sneakers-b2969_1440_1200.jpg', 1, '2022-04-04 05:57:19', '2022-04-04 05:57:19'),
+(3, 'DIOR CHEZ MOI', 'https://www.dior.com/couture/var/dior/storage/images/horizon/fashion/block-cover-cdc-cover-4/block-cover-item-cdc-femme-gift-for-her2/32115299-2-eng-HK/cdc-femme-dior-chez-moi27_1440_1200.jpg', 2, '2022-04-04 05:57:19', '2022-04-04 05:57:19'),
+(4, 'SUMMER 2022 COLLECTION', 'https://www.dior.com/couture/var/dior/storage/images/31777747/4-eng-HK/cdc-homme-summer-2022-collection80_1440_1200.jpg', 1, '2022-04-04 05:57:19', '2022-04-04 05:57:19'),
+(5, 'SPRING-SUMMER 2022 COLLECTION', 'https://www.dior.com/couture/var/dior/storage/images/31781970/4-eng-GB/cdc-baby-spring-summer-2022-collection18_1440_1200.jpg', 3, '2022-04-04 05:57:19', '2022-04-04 05:57:19');
 
 -- --------------------------------------------------------
 
@@ -65,7 +91,8 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (5, '2022_02_25_092458_create_product_table', 1),
 (6, '2022_02_26_092938_create_customer_table', 1),
 (7, '2022_02_26_093417_create_order_table', 1),
-(8, '2022_02_26_094450_create_orderdetail_table', 1);
+(8, '2022_02_26_094450_create_orderdetail_table', 1),
+(9, '2022_03__29_094450_create_collection_table', 1);
 
 -- --------------------------------------------------------
 
@@ -144,11 +171,12 @@ CREATE TABLE `products` (
   `giaban` bigint(20) DEFAULT NULL,
   `giagiam` bigint(20) DEFAULT NULL,
   `mota` longtext COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `subtittle` varchar(200) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `subtitle` varchar(200) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `hinhanh` varchar(200) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `soluongton` int(11) DEFAULT NULL,
   `trangthai` tinyint(4) DEFAULT NULL,
   `maloaihang` bigint(20) UNSIGNED NOT NULL,
+  `collectionID` bigint(20) UNSIGNED NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -157,11 +185,9 @@ CREATE TABLE `products` (
 -- Dumping data for table `products`
 --
 
-INSERT INTO `products` (`masanpham`, `tensanpham`, `giaban`, `giagiam`, `mota`, `subtittle`, `hinhanh`, `soluongton`, `trangthai`, `maloaihang`, `created_at`, `updated_at`) VALUES
-(1, 'Product has Image', 123456, 123, 'asdasdasdasdasdasdasdasdasdas', NULL, '/resources/images/cat-5.jpg', 50, 1, 1, '2022-04-03 05:29:16', '2022-04-03 05:29:16'),
-(2, '3213123', 12, 12, '1111111111111', NULL, '/resources/images/download.jpg', 122, 1, 1, '2022-04-03 08:35:40', '2022-04-03 11:46:35'),
-(3, 'FDSF', 3213, 23312, '1', NULL, '/resources/images/download.jpg', 1, 1, 2, '2022-04-03 11:49:35', '2022-04-03 11:49:35'),
-(4, '1231', 3213, 3213, '321', NULL, '/resources/images/3213123.jpg', 321, 1, 1, '2022-04-03 11:50:05', '2022-04-03 11:50:05');
+INSERT INTO `products` (`masanpham`, `tensanpham`, `giaban`, `giagiam`, `mota`, `subtitle`, `hinhanh`, `soluongton`, `trangthai`, `maloaihang`, `collectionID`, `created_at`, `updated_at`) VALUES
+(1, 'SHORT-SLEEVED BLOUSE', 2000, 0, 'A staple of the Dior silhouette, the blouse is adorned with the D-Tiger Pop print that embodies the collection\'s colorful pop universe. Crafted in pink cotton poplin, it features a cropped, regular fit with a front button closure. The short-sleeved blouse can be worn with the matching skirt to complete the look.', 'Pink Cotton Poplin with Multicolor D-Tiger Pop Motif', 'download.jpg', 50, 1, 2, 1, '2022-04-04 08:18:41', '2022-04-04 08:18:41'),
+(2, 'Áo veston', 1234561, 123, 'ádqwdqdasdas', 'Sub Title 3', '905ce67f-69df-4595-a3b6-a8946631e27c_1.png', 43, 1, 1, 2, '2022-04-04 03:31:09', '2022-04-04 03:31:09');
 
 -- --------------------------------------------------------
 
@@ -181,8 +207,9 @@ CREATE TABLE `typeproducts` (
 --
 
 INSERT INTO `typeproducts` (`id`, `tenloaihang`, `created_at`, `updated_at`) VALUES
-(1, 'Men\' Fashion', '2022-04-03 12:28:27', '2022-04-03 12:28:27'),
-(2, 'Women\' Fashion', '2022-04-03 12:28:27', '2022-04-03 12:28:27');
+(1, 'Men\'Fashion', '2022-04-04 05:49:08', '2022-04-04 05:49:08'),
+(2, 'Women\'s Fashion', '2022-04-04 05:49:08', '2022-04-04 05:49:08'),
+(3, 'Kid\'s Fashion', '2022-04-04 05:54:24', '2022-04-04 05:54:24');
 
 -- --------------------------------------------------------
 
@@ -208,11 +235,18 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `enable`, `access_level`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Huy', 'huy@gmail.com', NULL, '$2y$10$F4dMdzOJAmhjtfm9vMFU/OGkqdl0stlsGDxsoTVgOq9zjM79hCrcq', 1, 1, NULL, NULL, NULL);
+(1, 'Huy', 'huy@gmail.com', NULL, '$2y$10$hWljVmIQ4P7Euby6okPtu.38V/om/6RTHKM67X7C5K/pKQPtkyNOa', 1, 1, NULL, NULL, NULL);
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `collections`
+--
+ALTER TABLE `collections`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `collections_typeproduct_foreign` (`typeproduct`);
 
 --
 -- Indexes for table `customers`
@@ -259,7 +293,8 @@ ALTER TABLE `personal_access_tokens`
 --
 ALTER TABLE `products`
   ADD PRIMARY KEY (`masanpham`),
-  ADD KEY `products_maloaihang_foreign` (`maloaihang`);
+  ADD KEY `products_maloaihang_foreign` (`maloaihang`),
+  ADD KEY `products_collectionID_foreign` (`collectionID`);
 
 --
 -- Indexes for table `typeproducts`
@@ -279,6 +314,12 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT for table `collections`
+--
+ALTER TABLE `collections`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
 -- AUTO_INCREMENT for table `customers`
 --
 ALTER TABLE `customers`
@@ -288,7 +329,7 @@ ALTER TABLE `customers`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `orders`
@@ -306,13 +347,13 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `masanpham` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `masanpham` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `typeproducts`
 --
 ALTER TABLE `typeproducts`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `users`
@@ -323,6 +364,12 @@ ALTER TABLE `users`
 --
 -- Constraints for dumped tables
 --
+
+--
+-- Constraints for table `collections`
+--
+ALTER TABLE `collections`
+  ADD CONSTRAINT `collections_typeproduct_foreign` FOREIGN KEY (`typeproduct`) REFERENCES `typeproducts` (`id`);
 
 --
 -- Constraints for table `orderdetails`
@@ -341,6 +388,7 @@ ALTER TABLE `orders`
 -- Constraints for table `products`
 --
 ALTER TABLE `products`
+  ADD CONSTRAINT `products_collectionID_foreign` FOREIGN KEY (`collectionID`) REFERENCES `collections` (`id`),
   ADD CONSTRAINT `products_maloaihang_foreign` FOREIGN KEY (`maloaihang`) REFERENCES `typeproducts` (`id`);
 COMMIT;
 
